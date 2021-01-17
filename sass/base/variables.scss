@@ -1,0 +1,24 @@
+//COLOURS
+$beige: #E0B8B8;
+$peach: #E0B8C9;
+$pink: #E0B8DD;
+$purple: #C9B8E0;
+$blue: #B8C2E0;
+$grey: #787878;
+$lightgrey: #D8D8D8;
+
+//Home Background Gradient
+$hg1: #E0B8DD;
+$hg2: #F4DCE6;
+$home-gradient: $hg1, $hg2; 
+
+//About Background Gradient
+$ag1: rgba(224, 184, 201, 100%);
+$ag2: rgba(187, 136, 204, 86%);
+$a-gradient: $ag1, $ag2;
+
+//Project Box Gradient
+$pb-gradient-1: $beige, $peach;
+$pb-gradient-2: $peach, $pink;
+$pb-gradient-3: $pink, $purple;
+$pb-gradient-4: $purple, $blue;

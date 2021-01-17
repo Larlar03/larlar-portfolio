@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    main {
+        width: 90%;
+        height: 1024px;
+        margin: 0 auto;
+
+        /*SECTION CONTAINER*/
+        .outer-section {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-flow: column nowrap;
+
+            /*PREV & NEXT PAGE ARROWS*/
+            .arrow-container {
+                width: 100%;
+                height: 25px;
+                text-align: center;
+
+                .arrow-prev {
+                    @include links($lightgrey, $pink, $pink);
+
+                    a {
+                        i {
+                            vertical-align: top;
+                        }
+                    }
+                }
+
+                .arrow-next {
+                    @include links($lightgrey, $pink, $pink);
+
+                    a {
+                        i {}
+                    }
+                }
+            }
+
+            /*INNER SECTION*/
+            .inner-section {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+
+                /*HEADER*/
+                .section-header {
+                    width: 100%;
+                    height: 8%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-content: center;
+
+                    .logo {
+                        width: 30%;
+                    }
+
+                    nav {
+                        width: 70%;
+                        text-align: right;
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                display: inline-block;
+                                padding-left: 20px;
+
+                                a {
+                                    @include links($grey, $pink, $pink);
+                                    transition: 1s;
+                                }
+
+                                .active {
+                                    color: $pink !important;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*MAIN*/
+                .section-main {
+                    width: 100%;
+                    height: 84%;
+                }
+
+                /*FOOTER*/
+                .section-footer {
+                    width: 100%;
+                    height: 8%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-content: center;
+
+
+                    .footer-icons {
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                display: inline-block;
+
+                                a {
+                                    @include links($purple, $pink, $pink);
+                                    transition: 1s;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .footer-icons-left {
+                        width: 50%;
+
+                        ul {
+                            li {
+                                padding-right: 10px;
+                            }
+                        }
+
+                    }
+
+                    .footer-icons-right {
+                        width: 50%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

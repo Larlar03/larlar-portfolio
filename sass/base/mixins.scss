@@ -1,0 +1,30 @@
+//Gradient
+@mixin gradient($direction, $gradient) { 
+  background: -webkit-linear-gradient($direction, $gradient);
+  background: -moz-linear-gradient($direction, $gradient);
+  background: -o-linear-gradient($direction, $gradient);
+  background: linear-gradient($direction, $gradient);  
+}
+
+/* Link colors */
+@mixin links($color, $hover-color, $active-color) {
+  color: $color !important;
+
+  &:hover {
+    color: $hover-color !important;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  &:active {
+    color: $active-color !important;
+  }
+}
+
+  /*Flexbox*/
+  @mixin flex($flow, $jcontent, $acontent) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $jcontent;
+    align-content: $acontent;
+  }

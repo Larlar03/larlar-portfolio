@@ -1,0 +1,174 @@
+
+        <!--PROJECTS SECTION-------------------------------------------------------------------------------------->
+        <section id="projects" class="cd-section">
+            <!--Projects Container Starts-->
+            <div id="projects-container">
+                <!--Projects Header-->
+                <div id="projects-header">
+                    <div class="logo">Lana Gordon</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#photography">Photography</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--Projects Main-->
+                <div id="projects-main">
+                    <div class="projects-title">
+                        <h3>Development Projects</h3>
+                    </div>
+                    <div class="projects-carousel-container">
+                        Carousel
+                    </div>
+                </div>
+
+                <!--Projects Footer-->
+                <div id="projects-footer">
+                    <div class="icons-left">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons-right">
+                        <ul>
+                            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Projects Container Ends-->
+        </section>
+
+        <!--PHOTOGRAPHY SECTION-------------------------------------------------------------------------------------->
+        <section id="photography" class="cd-section">
+            <!--Page Up Arrow-->
+            <i class="fas fa-chevron-up"></i>
+            <!--Photography Container Starts-->
+            <div id="photography-container">
+                <!--Photography Header-->
+                <div id="photography-header">
+                    <div class="logo">Lana Gordon</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#photography">Photography</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--Photography Main-->
+                <div id="photography-main">
+                    <div class="photography-title">
+                        <h3>Photography</h3>
+                    </div>
+                    <div class="photography-carousel-container">
+                        Carousel
+                    </div>
+                </div>
+
+                <!--Photography Footer-->
+                <div id="photography-footer">
+                    <div class="icons-left">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons-right">
+                        <ul>
+                            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Photography Container Ends-->
+        </section>
+
+        <!--ABOUT SECTION-------------------------------------------------------------------------------------->
+        <section id="about" class="cd-section">
+            <!--Photography Container Starts-->
+            <div id="about-container">
+                <!--Photography Header-->
+                <div id="bout-header">
+                    <div class="logo">Lana Gordon</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#photography">Photography</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--About Main-->
+                <div id="about-main">
+                    <div class="about-right">
+                        <div class="about-text">
+                            <h3>Lana Gordon</h3>
+                            <h4>Front End Developer & Visual Designer</h4>
+                            <p>Birmingham UK</p>
+                            <p>I'm Junior UI Designer and Front-End Development, creating websites from design to
+                                deployment.
+
+                                My development skils include HTML, CSS, SCSS, JavaScript, jQuery, ReactJS, the
+                                Command-Line, and Git.
+                                I also have broad range of skills in Photography and Visual Design, which include
+                                wireframing, resposive design, retouching.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--About Footer-->
+                <div id="about-footer">
+                    <div class="icons-left">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons-right">
+                        <ul>
+                            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--About Container Ends-->
+        </section>
+
+
+            <div id="arrow-nav">
+        <ul class="cd-vertical-nav">
+            <!--Prev Arrow-->
+            <li>
+                <a href="#0" class="cd-prev inactive">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </li>
+
+            <!--Next Arrow-->
+            <li>
+                <a href="#0" class="cd-next">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
