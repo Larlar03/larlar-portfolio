@@ -1,5 +1,6 @@
 body {
     main {
+
         /*HOME SECTION*/
         #outer-home {
             #inner-home {
@@ -10,29 +11,101 @@ body {
                     justify-content: center;
                     align-content: center;
                     text-align: center;
+
                     h1 {
                         margin-bottom: 20px;
                     }
-                    h2 {
 
+                    h2 {}
+                }
+            }
+        }
+
+        /*PROJECTS SECTION*/
+        #outer-projects {
+            #inner-projects {
+                div#main-projects {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-around;
+
+                    .projects-title {
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+
+                    /*SLIDESHOW CAROUSEL*/
+                    .projects-carousel-container {
+                        width: 100%;
+                        height: 380px;
+                        text-align: center;
+
+                        /*ARROWS TRANSPARENT BACKGROUND*/
+                        .splide__track {
+                            #splide01 > div.splide__arrows > button.splide__arrow.splide__arrow--prev {
+                                background: rgba(0, 0, 0, 0) !important;
+                            }
+
+                            #splide01 > div.splide__arrows > button.splide__arrow.splide__arrow--next {
+                                background: rgba(0, 0, 0, 0%) ;
+                            }
+
+                            .splide__list {}
+
+                            .soundboard {
+                                @include gradient(to bottom, $pg1);
+                            }
+
+                            .font {
+                                @include gradient(to bottom, $pg2);
+                            }
+
+                            .period {
+                                @include gradient(to bottom, $pg3);
+                            }
+
+                            .weather {
+                                @include gradient(to bottom, $pg4);
+                            }
+
+                            .awake {
+                                @include gradient(to bottom, $pg1);
+                            }
+
+                            .wheel {
+                                @include gradient(to bottom, $pg2);
+                            }
+
+                            .sevdaliza {
+                                @include gradient(to bottom, $pg3);
+                            }
+                        }
                     }
                 }
             }
         }
 
-                /*PROJECTS SECTION*/
-                #outer-projects {
-                    #inner-projects {
-                        div#main-projects {
-                            .projects-title {
-
+                /*PHOTOGRAPHY SECTION*/
+                #outer-photography {
+                    #inner-photography {
+                        div#main-photography {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: space-around;
+        
+                            .photography-title {
+                                margin-top: 40px;
+                                text-align: center;
                             }
-
-                            .projects-carousel-container {
-                                
+        
+                            /*SLIDESHOW CAROUSEL*/
+                            .photography-carousel-container {
+                                width: 100%;
+                                height: auto;
+                                }
                             }
                         }
                     }
                 }
+
     }
-}
