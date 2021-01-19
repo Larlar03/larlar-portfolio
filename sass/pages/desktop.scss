@@ -30,27 +30,47 @@ body {
                     justify-content: space-around;
 
                     .projects-title {
-                        margin-top: 40px;
+                        margi-top: 40px;
                         text-align: center;
                     }
 
                     /*SLIDESHOW CAROUSEL*/
                     .projects-carousel-container {
                         width: 100%;
-                        height: 380px;
+                        min-height: 380px;
                         text-align: center;
 
-                        /*ARROWS TRANSPARENT BACKGROUND*/
-                        .splide__track {
-                            #splide01 > div.splide__arrows > button.splide__arrow.splide__arrow--prev {
-                                background: rgba(0, 0, 0, 0) !important;
+                        /*PAGINATION DOTS STYLE*/
+                        .splide__pagination {
+                            bottom: -2em;
+
+                            .splide__pagination__page {
+                                background: $beige;
                             }
 
-                            #splide01 > div.splide__arrows > button.splide__arrow.splide__arrow--next {
-                                background: rgba(0, 0, 0, 0%) ;
+                            .is-active {
+                                background: $blue;
                             }
+                        }
 
-                            .splide__list {}
+                        /*ARROWS STYLE*/
+                        .splide__arrows {
+                            .splide__arrow {
+                                background: rgba(0, 0, 0, 0);
+
+                                svg {
+                                    fill: white;
+                                    height: 24px;
+                                    width: 21px;
+                                }
+                            }
+                        }
+
+                            .prev-box {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
 
                             .soundboard {
                                 @include gradient(to bottom, $pg1);
@@ -85,27 +105,25 @@ body {
             }
         }
 
-                /*PHOTOGRAPHY SECTION*/
-                #outer-photography {
-                    #inner-photography {
-                        div#main-photography {
-                            display: flex;
-                            flex-flow: column nowrap;
-                            justify-content: space-around;
-        
-                            .photography-title {
-                                margin-top: 40px;
-                                text-align: center;
-                            }
-        
-                            /*SLIDESHOW CAROUSEL*/
-                            .photography-carousel-container {
-                                width: 100%;
-                                height: auto;
-                                }
-                            }
-                        }
+        /*PHOTOGRAPHY SECTION*/
+        #outer-photography {
+            #inner-photography {
+                div#main-photography {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-around;
+
+                    .photography-title {
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+
+                    /*SLIDESHOW CAROUSEL*/
+                    .photography-carousel-container {
+                        width: 100%;
+                        height: auto;
                     }
                 }
-
+            }
+        }
     }
