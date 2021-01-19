@@ -1,129 +1,166 @@
 body {
-    main {
+  main {
+    /*HOME SECTION*/
+    #outer-home {
+      #inner-home {
+        div#main-home {
+          @include gradient(to bottom, $home-gradient);
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
 
-        /*HOME SECTION*/
-        #outer-home {
-            #inner-home {
-                div#main-home {
-                    @include gradient(to bottom, $home-gradient);
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: center;
-                    align-content: center;
-                    text-align: center;
+          h1 {
+            margin-bottom: 20px;
+          }
 
-                    h1 {
-                        margin-bottom: 20px;
-                    }
-
-                    h2 {}
-                }
-            }
+          h2 {
+          }
         }
-
-        /*PROJECTS SECTION*/
-        #outer-projects {
-            #inner-projects {
-                div#main-projects {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: space-around;
-
-                    .projects-title {
-                        margi-top: 40px;
-                        text-align: center;
-                    }
-
-                    /*SLIDESHOW CAROUSEL*/
-                    .projects-carousel-container {
-                        width: 100%;
-                        min-height: 380px;
-                        text-align: center;
-
-                        /*PAGINATION DOTS STYLE*/
-                        .splide__pagination {
-                            bottom: -2em;
-
-                            .splide__pagination__page {
-                                background: $beige;
-                            }
-
-                            .is-active {
-                                background: $blue;
-                            }
-                        }
-
-                        /*ARROWS STYLE*/
-                        .splide__arrows {
-                            .splide__arrow {
-                                background: rgba(0, 0, 0, 0);
-
-                                svg {
-                                    fill: white;
-                                    height: 24px;
-                                    width: 21px;
-                                }
-                            }
-                        }
-
-                            .prev-box {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-
-                            .soundboard {
-                                @include gradient(to bottom, $pg1);
-                            }
-
-                            .font {
-                                @include gradient(to bottom, $pg2);
-                            }
-
-                            .period {
-                                @include gradient(to bottom, $pg3);
-                            }
-
-                            .weather {
-                                @include gradient(to bottom, $pg4);
-                            }
-
-                            .awake {
-                                @include gradient(to bottom, $pg1);
-                            }
-
-                            .wheel {
-                                @include gradient(to bottom, $pg2);
-                            }
-
-                            .sevdaliza {
-                                @include gradient(to bottom, $pg3);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        /*PHOTOGRAPHY SECTION*/
-        #outer-photography {
-            #inner-photography {
-                div#main-photography {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: space-around;
-
-                    .photography-title {
-                        margin-top: 40px;
-                        text-align: center;
-                    }
-
-                    /*SLIDESHOW CAROUSEL*/
-                    .photography-carousel-container {
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-        }
+      }
     }
+
+    /*PROJECTS SECTION*/
+    #outer-projects {
+      #inner-projects {
+        div#main-projects {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-around;
+
+          .projects-title {
+            margin-bottom: 100px;
+            text-align: center;
+          }
+
+          /*SLIDESHOW CAROUSEL*/
+          .projects-carousel-container {
+            width: 100%;
+            min-height: 380px;
+            text-align: center;
+
+            /*PAGINATION DOTS STYLE*/
+            .splide__pagination {
+              bottom: -2em;
+
+              .splide__pagination__page {
+                background: $beige;
+              }
+
+              .is-active {
+                background: $blue;
+              }
+            }
+
+            /*ARROWS STYLE*/
+            .splide__arrows {
+              .splide__arrow {
+                background: rgba(0, 0, 0, 0);
+
+                svg {
+                  fill: white;
+                  height: 24px;
+                  width: 21px;
+                  &:hover {
+                      fill: $grey;
+                  }
+                }
+              }
+            }
+
+            /*VERTICALLY ALIGN PREVIEW HEADINGS IN BOX*/
+            .preview-box {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .soundboard {
+              @include gradient(to bottom, $pg1);
+            }
+
+            .font {
+              @include gradient(to bottom, $pg2);
+            }
+
+            .period {
+              @include gradient(to bottom, $pg3);
+            }
+
+            .weather {
+              @include gradient(to bottom, $pg4);
+            }
+
+            .awake {
+              @include gradient(to bottom, $pg1);
+            }
+
+            .wheel {
+              @include gradient(to bottom, $pg2);
+            }
+
+            .sevdaliza {
+              @include gradient(to bottom, $pg3);
+            }
+          }
+        }
+      }
+    }
+
+    /*PHOTOGRAPHY SECTION*/
+    #outer-photography {
+      #inner-photography {
+        div#main-photography {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-around;
+
+          .photography-title {
+            margin-bottom: 100px;
+            text-align: center;
+          }
+
+          /*SLIDESHOW CAROUSEL*/
+          .photography-carousel-container {
+            width: 100%;
+            height: auto;
+            /*PAGINATION DOTS STYLE*/
+            .splide__pagination {
+              bottom: -2em;
+
+              .splide__pagination__page {
+                background: $beige;
+              }
+
+              .is-active {
+                background: $blue;
+              }
+            }
+
+            /*ARROWS STYLE*/
+            .splide__arrows {
+              .splide__arrow {
+                background: rgba(0, 0, 0, 0);
+
+                svg {
+                  fill: white;
+                  height: 24px;
+                  width: 21px;
+                  &:hover {
+                    fill: $grey;
+                }
+                }
+              }
+            }
+
+            .splide__slide img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

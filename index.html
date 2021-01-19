@@ -112,6 +112,7 @@
 
                 <!--Projects Main-->
                 <div id="main-projects" class="section-main">
+                    <div class="flexbox_center_content">
                     <div class="projects-title">
                         <h3>Development Projects</h3>
                     </div>
@@ -120,17 +121,18 @@
                         <div class="splide" data-splide='{"type":"loop","perPage":3,"speed":1000,"fixedHeight":"380px","gap":"40px"}'>
                             <div class="splide__track">
                                 <div class="splide__list">
-                                    <div class="splide__slide prev-box soundboard"><h4>The GC Soundboard</h4></div>
-                                    <div class="splide__slide prev-box font"><h4>Font!</h4></div>
-                                    <div class="splide__slide prev-box period"><h4>Period.</h4></div>
-                                    <div class="splide__slide prev-box weather"><h4>Weather</h4></div>
-                                    <div class="splide__slide prev-box awake"><h4>Awake</h4></div>
-                                    <div class="splide__slide prev-box wheel"><h4>Colour Wheel</h4></div>
-                                    <div class="splide__slide prev-box sevdaliza"><h4>Sevdaliza</h4></div>
+                                    <div class="splide__slide preview-box soundboard"><h4>The GC Soundboard</h4></div>
+                                    <div class="splide__slide preview-box font"><h4>Font!</h4></div>
+                                    <div class="splide__slide preview-box period"><h4>Period.</h4></div>
+                                    <div class="splide__slide preview-box weather"><h4>Weather</h4></div>
+                                    <div class="splide__slide preview-box awake"><h4>Awake</h4></div>
+                                    <div class="splide__slide preview-box wheel"><h4>Colour Wheel</h4></div>
+                                    <div class="splide__slide preview-box sevdaliza"><h4>Sevdaliza</h4></div>
                                     </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
 
                 <!--Projects Footer-->
@@ -187,13 +189,50 @@
 
      <!--Photography Main-->
      <div id="main-photography" class="section-main">
+     <div class="flexbox_center_content">
          <div class="photography-title">
              <h3>Photography</h3>
          </div>
          <!--Photography Carousel-->
          <div class="photography-carousel-container">
-       
-         </div>
+            <div id="image-slider" class="splide" data-splide='{"type":"loop","perPage":3,"speed":1000,"gap":"40px"}'>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="img/previews/girlyhood.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/purpose.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/reset.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/changing.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/crisis.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/spatial.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/beauty.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/define.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/build.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/previews/product.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
      </div>
 
      <!--Photography Footer-->
@@ -214,9 +253,7 @@
          </div>
      </div>
  </div>
- <!--Projects Inner Div Ends-->
-
-  <!--Home Inner Div Ends-->
+ <!--Photography Inner Div Ends-->
         <!--Next Arrow-->
         <div class="arrow-container">
          <a href="#0" class="arrow-next">
@@ -240,7 +277,12 @@
 
     <!--Splide-->
     <script>
-        new Splide( '.splide' ).mount(); 
+        new Splide( '.splide' ).mount();
+
+        document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#image-slider' ).mount();
+} );
+        
     </script>
 
 </body>
