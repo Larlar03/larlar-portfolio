@@ -1,166 +1,213 @@
 body {
-  main {
-    /*HOME SECTION*/
-    #outer-home {
-      #inner-home {
-        div#main-home {
-          @include gradient(to bottom, $home-gradient);
-          display: flex;
-          flex-flow: column wrap;
-          justify-content: center;
-          align-content: center;
-          text-align: center;
+    main {
 
-          h1 {
-            margin-bottom: 20px;
-          }
+        /*HOME SECTION*/
+        #outer-home {
+            #inner-home {
+                div#main-home {
+                    @include gradient(to bottom, $home-gradient);
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-content: center;
+                    text-align: center;
 
-          h2 {
-          }
-        }
-      }
-    }
+                    h1 {
+                        margin-bottom: 20px;
+                    }
 
-    /*PROJECTS SECTION*/
-    #outer-projects {
-      #inner-projects {
-        div#main-projects {
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: space-around;
-
-          .projects-title {
-            margin-bottom: 100px;
-            text-align: center;
-          }
-
-          /*SLIDESHOW CAROUSEL*/
-          .projects-carousel-container {
-            width: 100%;
-            min-height: 380px;
-            text-align: center;
-
-            /*PAGINATION DOTS STYLE*/
-            .splide__pagination {
-              bottom: -2em;
-
-              .splide__pagination__page {
-                background: $beige;
-              }
-
-              .is-active {
-                background: $blue;
-              }
-            }
-
-            /*ARROWS STYLE*/
-            .splide__arrows {
-              .splide__arrow {
-                background: rgba(0, 0, 0, 0);
-
-                svg {
-                  fill: white;
-                  height: 24px;
-                  width: 21px;
-                  &:hover {
-                      fill: $grey;
-                  }
+                    h2 {}
                 }
-              }
             }
-
-            /*VERTICALLY ALIGN PREVIEW HEADINGS IN BOX*/
-            .preview-box {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-
-            .soundboard {
-              @include gradient(to bottom, $pg1);
-            }
-
-            .font {
-              @include gradient(to bottom, $pg2);
-            }
-
-            .period {
-              @include gradient(to bottom, $pg3);
-            }
-
-            .weather {
-              @include gradient(to bottom, $pg4);
-            }
-
-            .awake {
-              @include gradient(to bottom, $pg1);
-            }
-
-            .wheel {
-              @include gradient(to bottom, $pg2);
-            }
-
-            .sevdaliza {
-              @include gradient(to bottom, $pg3);
-            }
-          }
         }
-      }
-    }
 
-    /*PHOTOGRAPHY SECTION*/
-    #outer-photography {
-      #inner-photography {
-        div#main-photography {
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: space-around;
+        /*PROJECTS SECTION*/
+        #outer-projects {
+            #inner-projects {
+                div#main-projects {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-around;
 
-          .photography-title {
-            margin-bottom: 100px;
-            text-align: center;
-          }
+                    .projects-title {
+                        margin-bottom: 100px;
+                        text-align: center;
+                    }
 
-          /*SLIDESHOW CAROUSEL*/
-          .photography-carousel-container {
-            width: 100%;
-            height: auto;
-            /*PAGINATION DOTS STYLE*/
-            .splide__pagination {
-              bottom: -2em;
+                    /*SLIDESHOW CAROUSEL*/
+                    .projects-carousel-container {
+                        width: 100%;
+                        min-height: 380px;
+                        text-align: center;
 
-              .splide__pagination__page {
-                background: $beige;
-              }
+                        /*PAGINATION DOTS STYLE*/
+                        .splide__pagination {
+                            bottom: -2em;
 
-              .is-active {
-                background: $blue;
-              }
-            }
+                            .splide__pagination__page {
+                                background: $beige;
+                            }
 
-            /*ARROWS STYLE*/
-            .splide__arrows {
-              .splide__arrow {
-                background: rgba(0, 0, 0, 0);
+                            .is-active {
+                                background: $blue;
+                            }
+                        }
 
-                svg {
-                  fill: white;
-                  height: 24px;
-                  width: 21px;
-                  &:hover {
-                    fill: $grey;
+                        /*ARROWS STYLE*/
+                        .splide__arrows {
+                            .splide__arrow {
+                                background: rgba(0, 0, 0, 0);
+
+                                svg {
+                                    fill: white;
+                                    height: 24px;
+                                    width: 21px;
+
+                                    &:hover {
+                                        fill: $grey;
+                                    }
+                                }
+                            }
+                        }
+
+                        /*VERTICALLY ALIGN PREVIEW HEADINGS IN BOX*/
+                        .preview-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .soundboard {
+                            @include gradient(to bottom, $pg1);
+                        }
+
+                        .font {
+                            @include gradient(to bottom, $pg2);
+                        }
+
+                        .period {
+                            @include gradient(to bottom, $pg3);
+                        }
+
+                        .weather {
+                            @include gradient(to bottom, $pg4);
+                        }
+
+                        .awake {
+                            @include gradient(to bottom, $pg1);
+                        }
+
+                        .wheel {
+                            @include gradient(to bottom, $pg2);
+                        }
+
+                        .sevdaliza {
+                            @include gradient(to bottom, $pg3);
+                        }
+                    }
                 }
-                }
-              }
             }
-
-            .splide__slide img {
-              width: 100%;
-              height: auto;
-            }
-          }
         }
-      }
+
+        /*PHOTOGRAPHY SECTION*/
+        #outer-photography {
+            #inner-photography {
+                div#main-photography {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-around;
+
+                    .photography-title {
+                        margin-bottom: 100px;
+                        text-align: center;
+                    }
+
+                    /*SLIDESHOW CAROUSEL*/
+                    .photography-carousel-container {
+                        width: 100%;
+                        height: auto;
+
+                        /*PAGINATION DOTS STYLE*/
+                        .splide__pagination {
+                            bottom: -2em;
+
+                            .splide__pagination__page {
+                                background: $beige;
+                            }
+
+                            .is-active {
+                                background: $blue;
+                            }
+                        }
+
+                        /*ARROWS STYLE*/
+                        .splide__arrows {
+                            .splide__arrow {
+                                background: rgba(0, 0, 0, 0);
+
+                                svg {
+                                    fill: white;
+                                    height: 24px;
+                                    width: 21px;
+
+                                    &:hover {
+                                        fill: $grey;
+                                    }
+                                }
+                            }
+                        }
+
+                        .splide__slide img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*PHOTOGRAPHY SECTION*/
+        #outer-about {
+            #inner-about {
+                div#main-about {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+
+                    .about-left {
+                        width: 50%;
+                        height: 100%;
+                        @include gradient(to bottom, $about-gradient);
+
+                    }
+
+                    .about-right {
+                        width: 40%;
+                        height: auto;
+                        margin: 0 auto;
+
+                        .about-title {
+                            margin-bottom: 25px;
+
+                            h3 {
+                                color: $grey;
+                                font-weight: 500;
+                            }
+
+                            h5 {
+                                color: $purple;
+                            }
+
+                            hr {
+                                border-top: 2px solid $lightgrey;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
     }
-  }
 }
