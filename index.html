@@ -32,13 +32,16 @@
     <!--Splide Carousel Stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
+    <!--Page Scroll Effects-->
+    <link rel="stylesheet" href="/ps-effects/css/style.css"> <!-- Resource style -->
+	<script src="/ps-effects/js/modernizr.js"></script> <!-- Modernizr -->
+
 </head>
 
-
-    <main id="desktop">
+<body>
+    <main>
         <!--HOME SECTION-------------------------------------------------------------------------------------->
         <section id="outer-home" class="outer-section">
-          
             <!--Home Container Starts-->
             <div id="inner-home" class="inner-section">
                 <!--Home Header-->
@@ -46,10 +49,10 @@
                     <div class="logo">Lana Gordon</div>
                     <nav>
                         <ul>
-                            <li><a class="active" href="#home">Home</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#photography">Photography</a></li>
-                            <li><a href="#about">About</a></li>
+                            <li><a class="active" href="#outer-home">Home</a></li>
+                            <li><a href="#outer-projects">Projects</a></li>
+                            <li><a href="#outer-photography">Photography</a></li>
+                            <li><a href="#outer-about">About</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -81,18 +84,20 @@
             <!--Home Inner Div Ends-->
                    <!--Next Arrow-->
                    <div class="arrow-container">
-                    <a href="#0" class="arrow-next">
-                        <i class="fas fa-chevron-down fa-lg"></i>
+                    <a href="#outer-projects" class="arrow-next">
+                        <i class="fas fa-chevron-down fa-2x"></i>
                     </a>
                 </div>
         </section>
+
+       
 
         <!--PROJECTS SECTION-------------------------------------------------------------------------------------->
         <section id="outer-projects" class="outer-section">
                        <!--Prev Arrow-->
          <div class="arrow-container">
-            <a href="#0" class="arrow-prev">
-                <i class="fas fa-chevron-up fa-lg"></i>
+            <a href="#outer-home" class="arrow-prev">
+                <i class="fas fa-chevron-up fa-2x"></i>
             </a>
         </div>
             <!--Projects Container Starts-->
@@ -102,10 +107,10 @@
                     <div class="logo">Lana Gordon</div>
                     <nav>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a class="active" href="#projects">Projects</a></li>
-                            <li><a href="#photography">Photography</a></li>
-                            <li><a href="#about">About</a></li>
+                            <li><a href="#outer-home">Home</a></li>
+                            <li><a class="active" href="#outer-projects">Projects</a></li>
+                            <li><a href="#outer-photography">Photography</a></li>
+                            <li><a href="#outer-about">About</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -158,18 +163,20 @@
              <!--Home Inner Div Ends-->
                    <!--Next Arrow-->
                    <div class="arrow-container">
-                    <a href="#0" class="arrow-next">
-                        <i class="fas fa-chevron-down fa-lg"></i>
+                    <a href="#outer-photography" class="arrow-next">
+                        <i class="fas fa-chevron-down fa-2x"></i>
                     </a>
                 </div>
         </section>
+
+       
 
         <!--PHOTOGRAPHY SECTION-------------------------------------------------------------------------------------->
         <section id="outer-photography" class="outer-section">
             <!--Prev Arrow-->
 <div class="arrow-container">
- <a href="#0" class="arrow-prev">
-     <i class="fas fa-chevron-up fa-lg"></i>
+ <a href="#outer-projects" class="arrow-prev">
+     <i class="fas fa-chevron-up fa-2x"></i>
  </a>
 </div>
  <!--Prhotography Container Starts-->
@@ -179,10 +186,10 @@
          <div class="logo">Lana Gordon</div>
          <nav>
              <ul>
-                 <li><a href="#home">Home</a></li>
-                 <li><a  href="#projects">Projects</a></li>
-                 <li><a class="active" href="#photography">Photography</a></li>
-                 <li><a href="#about">About</a></li>
+                <li><a href="#outer-home">Home</a></li>
+                <li><a href="#outer-projects">Projects</a></li>
+                <li><a class="active" href="#outer-photography">Photography</a></li>
+                <li><a href="#outer-about">About</a></li>
              </ul>
          </nav>
      </div>
@@ -256,18 +263,21 @@
  <!--Photography Inner Div Ends-->
         <!--Next Arrow-->
         <div class="arrow-container">
-         <a href="#0" class="arrow-next">
-             <i class="fas fa-chevron-down fa-lg"></i>
+         <a href="#outer-about" class="arrow-next">
+             <i class="fas fa-chevron-down fa-2x"></i>
          </a>
      </div>
 </section>
+
+<div class="divider"></div>
+
 
 <!--ABOUT SECTION-------------------------------------------------------------------------------------->
 <section id="outer-about" class="outer-section">
      <!--Prev Arrow-->
 <div class="arrow-container">
-    <a href="#0" class="arrow-prev">
-        <i class="fas fa-chevron-up fa-lg"></i>
+    <a href="#outer-photography" class="arrow-prev">
+        <i class="fas fa-chevron-up fa-2x"></i>
     </a>
    </div>
           
@@ -278,10 +288,10 @@
             <div class="logo">Lana Gordon</div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#photography">Photography</a></li>
-                    <li><a class="active" href="#about">About</a></li>
+                    <li><a href="#outer-home">Home</a></li>
+                <li><a href="#outer-projects">Projects</a></li>
+                <li><a href="#outer-photography">Photography</a></li>
+                <li><a class="active" href="#outer-about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -350,9 +360,13 @@
         document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '#image-slider' ).mount();
 } );
+
+
         
     </script>
 
-</body>
+    
+    </body>
+
 
 </html>
