@@ -1,0 +1,357 @@
+/*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: $beige;
+        font-size: 16px;
+
+        /*HIDE DESKTOP*/
+        main#desktop {
+            display: none !important;
+        }
+
+        /*MOBILE HOME*/
+        main#main-mob-home {
+            display: flex !important;
+            width: 100vw;
+            height: 100vh;
+            @include gradient(to bottom, $home-gradient);
+            flex-flow: column nowrap;
+
+            /*MOBILE HEADER*/
+            .header-mob {
+                #nav-mob {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+
+            /*MOBILE HERO*/
+            .hero-mob {
+                width: 100%;
+                height: 95%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                text-align: center;
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 5px;
+                }
+
+                h2 {
+                    font-size: 1.87em;
+                }
+
+                .nav-links {
+                    margin-top: 10px;
+
+                    a {
+                        padding: 0 7px;
+                        color: $grey;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            /*MOBILE FOOTER*/
+            .footer-mob {
+                width: 100%;
+                height: 5%;
+                margin: 20px auto;
+
+                .footer-links-mob {
+                    width: 100%;
+                    height: auto;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: $beige;
+        font-size: 16px;
+
+        /*HIDE DESKTOP*/
+        main#desktop {
+            display: none !important;
+        }
+
+        /*MOBILE HOME*/
+        main#main-mob-home {
+            display: flex !important;
+            width: 100vw;
+            height: 100vh;
+            @include gradient(to bottom, $home-gradient);
+            flex-flow: column nowrap;
+
+            /*MOBILE HEADER*/
+            .header-mob {
+                #nav-mob {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+
+            /*MOBILE HERO*/
+            .hero-mob {
+                width: 100%;
+                height: 95%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                text-align: center;
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 5px;
+                }
+
+                h2 {
+                    font-size: 1.87em;
+                }
+
+                .nav-links {
+                    margin-top: 10px;
+
+                    a {
+                        padding: 0 7px;
+                        color: $grey;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            /*MOBILE FOOTER*/
+            .footer-mob {
+                width: 100%;
+                height: 5%;
+                margin: 0 auto 30px auto;
+
+                .footer-links-mob {
+                    width: 100%;
+                    height: auto;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: $beige;
+        font-size: 16px;
+
+        /*HIDE DESKTOP*/
+        main#desktop {
+            display: none !important;
+        }
+
+        /*MOBILE HOME*/
+        main#main-mob-home {
+            display: flex !important;
+            width: 100vw;
+            height: 100vh;
+            @include gradient(to bottom, $home-gradient);
+            flex-flow: column nowrap;
+
+            /*MOBILE HEADER*/
+            .header-mob {
+                #nav-mob {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+
+            /*MOBILE HERO*/
+            .hero-mob {
+                width: 100%;
+                height: 95%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                text-align: center;
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 5px;
+                }
+
+                h2 {
+                    font-size: 1.87em;
+                }
+
+                .nav-links {
+                    margin-top: 10px;
+
+                    a {
+                        padding: 0 7px;
+                        color: $grey;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            /*MOBILE FOOTER*/
+            .footer-mob {
+                width: 100%;
+                height: 5%;
+                margin: 20px auto;
+
+                .footer-links-mob {
+                    width: 100%;
+                    height: auto;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: $beige;
+        font-size: 16px;
+
+        /*HIDE DESKTOP*/
+        main#desktop {
+            display: none !important;
+        }
+
+        /*MOBILE HOME*/
+        main#main-mob-home {
+            display: flex !important;
+            width: 100vw;
+            height: 100vh;
+            @include gradient(to bottom, $home-gradient);
+            flex-flow: column nowrap;
+
+            /*MOBILE HEADER*/
+            .header-mob {
+                #nav-mob {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+
+            /*MOBILE HERO*/
+            .hero-mob {
+                width: 100%;
+                height: 95%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                text-align: center;
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 5px;
+                }
+
+                h2 {
+                    font-size: 1.87em;
+                }
+
+                .nav-links {
+                    margin-top: 10px;
+
+                    a {
+                        padding: 0 7px;
+                        color: $grey;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            /*MOBILE FOOTER*/
+            .footer-mob {
+                width: 100%;
+                height: 5%;
+                margin: 20px auto;
+
+                .footer-links-mob {
+                    width: 100%;
+                    height: auto;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

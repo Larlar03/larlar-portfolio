@@ -34,10 +34,55 @@
 </head>
 
 <body>
-    <main id="mobile">
+    <!--MOBILE BEGINS-------------------------------------------------------------------------------------->
+    <main id="main-mob-home">
+        <!--MOBILE HEADER-->
+        <header class="header-mob">
+            <!--MOBILE NAV-->
+            <div id="nav-mob" class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Lana Gordon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active top-nav-item" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="projects.html">Projects</a>
+                        <a class="nav-item nav-link" href="photography.html">Photography</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
 
+        </header>
+        <section class="hero-mob">
+            <h1>Lana Gordon</h1>
+            <h2>Front End Developer & Visual Designer</h2>
+            <div class="nav-links">
+                <a href="">Projects</a>
+                <a href="">About</a>
+            </div>
+        </section>
+
+        <footer class="footer-mob">
+            <div class="footer-links-mob">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                        class="fab fa-linkedin-in fa-lg"></i></a></li>
+            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            </li>
+            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at fa-lg"></i></a>
+                </ul>
+                
+            </div>
+        </footer>
     </main>
 
+
+
+    <!--DESKTOP BEGINS---------------------------------------------------------------------------------------->
     <main id="desktop">
         <!--HOME SECTION-------------------------------------------------------------------------------------->
         <section id="outer-home" class="outer-section">
@@ -125,25 +170,32 @@
                                 data-splide='{"type":"loop","perPage":3,"speed":1000,"fixedHeight":"380px","gap":"40px"}'>
                                 <div class="splide__track">
                                     <div class="splide__list">
-                                        <div class="splide__slide preview-box soundboard" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/gc-soundboard/', '_blank');">
+                                        <div class="splide__slide preview-box soundboard" style="cursor: pointer;"
+                                            onclick="window.open('https://larlar03.github.io/gc-soundboard/', '_blank');">
                                             <h4>The GC Soundboard</h4>
                                         </div>
-                                        <div class="splide__slide preview-box font" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/web-safe-font-preview/', '_blank');">
+                                        <div class="splide__slide preview-box font" style="cursor: pointer;"
+                                            onclick="window.open('https://larlar03.github.io/web-safe-font-preview/', '_blank');">
                                             <h4>Font!</h4>
                                         </div>
-                                        <div class="splide__slide preview-box period" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/javascript-quiz/', '_blank');">
+                                        <div class="splide__slide preview-box period" style="cursor: pointer;"
+                                            onclick="window.open('https://larlar03.github.io/javascript-quiz/', '_blank');">
                                             <h4>Period.</h4>
                                         </div>
-                                        <div class="splide__slide preview-box weather" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/weather-app/', '_blank');">
+                                        <div class="splide__slide preview-box weather" style="cursor: pointer;"
+                                            onclick="window.open('https://larlar03.github.io/weather-app/', '_blank');">
                                             <h4>Weather</h4>
                                         </div>
-                                        <div class="splide__slide preview-box awake" style="cursor: pointer;" onclick="window.open('https://awakebirmingham.co.uk/', '_blank');">
+                                        <div class="splide__slide preview-box awake" style="cursor: pointer;"
+                                            onclick="window.open('https://awakebirmingham.co.uk/', '_blank');">
                                             <h4>Awake</h4>
                                         </div>
-                                        <div class="splide__slide preview-box wheel" style="cursor: pointer;" onclick="window.open('https://larlar.co.uk/websites/colour-wheel/index.php', '_blank');">
+                                        <div class="splide__slide preview-box wheel" style="cursor: pointer;"
+                                            onclick="window.open('https://larlar.co.uk/websites/colour-wheel/index.php', '_blank');">
                                             <h4>Colour Wheel</h4>
                                         </div>
-                                        <div class="splide__slide preview-box sevdaliza" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/sevdaliza/', '_blank');">
+                                        <div class="splide__slide preview-box sevdaliza" style="cursor: pointer;"
+                                            onclick="window.open('https://larlar03.github.io/sevdaliza/', '_blank');">
                                             <h4>Sevdaliza</h4>
                                         </div>
                                     </div>
@@ -190,7 +242,7 @@
                     <i class="fas fa-chevron-up fa-2x"></i>
                 </a>
             </div>
-            
+
             <!--Prhotography Container Starts-->
             <div id="inner-photography" class="inner-section">
                 <!--Projects Header-->
@@ -350,7 +402,7 @@
                 </div>
             </div>
         </section>
-<!--SECTIONS END-->
+        <!--SECTIONS END-->
     </main>
 
     <!--Bootstrap JS-->
