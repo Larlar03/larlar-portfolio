@@ -1,212 +1,215 @@
  body {
-    main {
-        /*HOME SECTION*/
-        #outer-home {
-            #inner-home {
-                div#main-home {
-                    @include gradient(to bottom, $home-gradient);
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: center;
-                    align-content: center;
-                    text-align: center;
+     main#mobile {
+         display: none !important;
+     }
 
-                    h1 {
-                        margin-bottom: 20px;
-                    }
+     main#desktop {
 
-                    h2 {}
-                }
-            }
-        }
+         /*HOME SECTION*/
+         #outer-home {
+             #inner-home {
+                 div#main-home {
+                     @include gradient(to bottom, $home-gradient);
+                     display: flex;
+                     flex-flow: column wrap;
+                     justify-content: center;
+                     align-content: center;
+                     text-align: center;
 
-        /*PROJECTS SECTION*/
-        #outer-projects {
-            #inner-projects {
-                div#main-projects {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: space-around;
+                     h1 {
+                         margin-bottom: 20px;
+                     }
+                 }
+             }
+         }
 
-                    .projects-title {
-                        margin-bottom: 100px;
-                        text-align: center;
-                    }
+         /*PROJECTS SECTION*/
+         #outer-projects {
+             #inner-projects {
+                 div#main-projects {
+                     display: flex;
+                     flex-flow: column nowrap;
+                     justify-content: space-around;
 
-                    /*SLIDESHOW CAROUSEL*/
-                    .projects-carousel-container {
-                        width: 100%;
-                        min-height: 380px;
-                        text-align: center;
+                     .projects-title {
+                         margin-bottom: 100px;
+                         text-align: center;
+                     }
 
-                        /*PAGINATION DOTS STYLE*/
-                        .splide__pagination {
-                            bottom: -2em;
+                     /*SLIDESHOW CAROUSEL*/
+                     .projects-carousel-container {
+                         width: 100%;
+                         min-height: 380px;
+                         text-align: center;
 
-                            .splide__pagination__page {
-                                background: $beige;
-                            }
+                         /*PAGINATION DOTS STYLE*/
+                         .splide__pagination {
+                             bottom: -2em;
 
-                            .is-active {
-                                background: $blue;
-                            }
-                        }
+                             .splide__pagination__page {
+                                 background: $blue;
+                             }
 
-                        /*ARROWS STYLE*/
-                        .splide__arrows {
-                            .splide__arrow {
-                                background: rgba(0, 0, 0, 0);
+                             .is-active {
+                                 background: $purple;
+                             }
+                         }
 
-                                svg {
-                                    fill: white;
-                                    height: 24px;
-                                    width: 21px;
+                         /*ARROWS STYLE*/
+                         .splide__arrows {
+                             .splide__arrow {
+                                 background: rgba(0, 0, 0, 0);
 
-                                    &:hover {
-                                        fill: $grey;
-                                    }
-                                }
-                            }
-                        }
+                                 svg {
+                                     fill: white;
+                                     height: 24px;
+                                     width: 21px;
 
-                        /*VERTICALLY ALIGN PREVIEW HEADINGS IN BOX*/
-                        .preview-box {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
+                                     &:hover {
+                                         fill: $grey;
+                                     }
+                                 }
+                             }
+                         }
 
-                        .soundboard {
-                            @include gradient(to bottom, $pg1);
-                        }
+                         /*VERTICALLY ALIGN PREVIEW HEADINGS IN BOX*/
+                         .preview-box {
+                             display: flex;
+                             align-items: center;
+                             justify-content: center;
+                         }
 
-                        .font {
-                            @include gradient(to bottom, $pg2);
-                        }
+                         .soundboard {
+                             @include gradient(to bottom, $pg1);
+                         }
 
-                        .period {
-                            @include gradient(to bottom, $pg3);
-                        }
+                         .font {
+                             @include gradient(to bottom, $pg2);
+                         }
 
-                        .weather {
-                            @include gradient(to bottom, $pg4);
-                        }
+                         .period {
+                             @include gradient(to bottom, $pg3);
+                         }
 
-                        .awake {
-                            @include gradient(to bottom, $pg1);
-                        }
+                         .weather {
+                             @include gradient(to bottom, $pg4);
+                         }
 
-                        .wheel {
-                            @include gradient(to bottom, $pg2);
-                        }
+                         .awake {
+                             @include gradient(to bottom, $pg1);
+                         }
 
-                        .sevdaliza {
-                            @include gradient(to bottom, $pg3);
-                        }
-                    }
-                }
-            }
-        }
+                         .wheel {
+                             @include gradient(to bottom, $pg2);
+                         }
 
-        /*PHOTOGRAPHY SECTION*/
-        #outer-photography {
-            #inner-photography {
-                div#main-photography {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: space-around;
+                         .sevdaliza {
+                             @include gradient(to bottom, $pg3);
+                         }
+                     }
+                 }
+             }
+         }
 
-                    .photography-title {
-                        margin-bottom: 100px;
-                        text-align: center;
-                    }
+         /*PHOTOGRAPHY SECTION*/
+         #outer-photography {
+             #inner-photography {
+                 div#main-photography {
+                     display: flex;
+                     flex-flow: column nowrap;
+                     justify-content: space-around;
 
-                    /*SLIDESHOW CAROUSEL*/
-                    .photography-carousel-container {
-                        width: 100%;
-                        height: auto;
+                     .photography-title {
+                         margin-bottom: 100px;
+                         text-align: center;
+                     }
 
-                        /*PAGINATION DOTS STYLE*/
-                        .splide__pagination {
-                            bottom: -2em;
+                     /*SLIDESHOW CAROUSEL*/
+                     .photography-carousel-container {
+                         width: 100%;
+                         height: auto;
 
-                            .splide__pagination__page {
-                                background: $beige;
-                            }
+                         /*PAGINATION DOTS STYLE*/
+                         .splide__pagination {
+                             bottom: -2em;
 
-                            .is-active {
-                                background: $blue;
-                            }
-                        }
+                             .splide__pagination__page {
+                                 background: $blue;
+                             }
 
-                        /*ARROWS STYLE*/
-                        .splide__arrows {
-                            .splide__arrow {
-                                background: rgba(0, 0, 0, 0);
+                             .is-active {
+                                 background: $purple;
+                             }
+                         }
 
-                                svg {
-                                    fill: white;
-                                    height: 24px;
-                                    width: 21px;
+                         /*ARROWS STYLE*/
+                         .splide__arrows {
+                             .splide__arrow {
+                                 background: rgba(0, 0, 0, 0);
 
-                                    &:hover {
-                                        fill: $grey;
-                                    }
-                                }
-                            }
-                        }
+                                 svg {
+                                     fill: white;
+                                     height: 24px;
+                                     width: 21px;
 
-                        .splide__slide img {
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                }
-            }
-        }
+                                     &:hover {
+                                         fill: $grey;
+                                     }
+                                 }
+                             }
+                         }
 
-        /*PHOTOGRAPHY SECTION*/
-        #outer-about {
-            #inner-about {
-                div#main-about {
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: center;
+                         .splide__slide img {
+                             width: 100%;
+                             height: auto;
+                         }
+                     }
+                 }
+             }
+         }
 
-                    .about-left {
-                        width: 50%;
-                        height: 100%;
-                        @include gradient(to bottom, $about-gradient);
+         /*PHOTOGRAPHY SECTION*/
+         #outer-about {
+             #inner-about {
+                 div#main-about {
+                     display: flex;
+                     flex-flow: column wrap;
+                     justify-content: center;
 
-                    }
+                     .about-left {
+                         width: 50%;
+                         height: 100%;
+                         @include gradient(to bottom, $about-gradient);
 
-                    .about-right {
-                        width: 40%;
-                        height: auto;
-                        margin: 0 auto;
+                     }
 
-                        .about-title {
-                            margin-bottom: 25px;
+                     .about-right {
+                         width: 40%;
+                         height: auto;
+                         margin: 0 auto;
 
-                            h3 {
-                                color: $grey;
-                                font-weight: 500;
-                            }
+                         .about-title {
+                             margin-bottom: 25px;
 
-                            h5 {
-                                color: $purple;
-                            }
+                             h3 {
+                                 color: $grey;
+                                 font-weight: 500;
+                             }
 
-                            hr {
-                                border-top: 2px solid $lightgrey;
-                            }
-                        }
+                             h5 {
+                                 color: $blue;
+                             }
+
+                             hr {
+                                 border-top: 2px solid $lightgrey;
+                             }
+                         }
 
 
-                    }
-                }
-            }
-        }
+                     }
+                 }
+             }
+         }
 
-    }
-}
+     }
+ }

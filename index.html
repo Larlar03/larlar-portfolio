@@ -21,9 +21,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <!--CSS Stylesheet-->
-    <link rel="stylesheet" href="css/desktop_master.css">
-
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/5beeba53dd.js" crossorigin="anonymous"></script>
 
@@ -32,17 +29,18 @@
     <!--Splide Carousel Stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
-    <!--Page Scroll Effects-->
-    <link rel="stylesheet" href="/ps-effects/css/style.css"> <!-- Resource style -->
-	<script src="/ps-effects/js/modernizr.js"></script> <!-- Modernizr -->
-
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/desktop_master.css">
 </head>
 
 <body>
-    <main>
+    <main id="mobile">
+
+    </main>
+
+    <main id="desktop">
         <!--HOME SECTION-------------------------------------------------------------------------------------->
         <section id="outer-home" class="outer-section">
-            <!--Home Container Starts-->
             <div id="inner-home" class="inner-section">
                 <!--Home Header-->
                 <div id="header-home" class="section-header">
@@ -82,24 +80,24 @@
                 </div>
             </div>
             <!--Home Inner Div Ends-->
-                   <!--Next Arrow-->
-                   <div class="arrow-container">
-                    <a href="#outer-projects" class="arrow-next">
-                        <i class="fas fa-chevron-down fa-2x"></i>
-                    </a>
-                </div>
+            <!--Next Arrow-->
+            <div class="arrow-container">
+                <a href="#outer-projects" class="arrow-next">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                </a>
+            </div>
         </section>
 
-       
 
         <!--PROJECTS SECTION-------------------------------------------------------------------------------------->
         <section id="outer-projects" class="outer-section">
-                       <!--Prev Arrow-->
-         <div class="arrow-container">
-            <a href="#outer-home" class="arrow-prev">
-                <i class="fas fa-chevron-up fa-2x"></i>
-            </a>
-        </div>
+            <!--Prev Arrow-->
+            <div class="arrow-container">
+                <a href="#outer-home" class="arrow-prev">
+                    <i class="fas fa-chevron-up fa-2x"></i>
+                </a>
+            </div>
+
             <!--Projects Container Starts-->
             <div id="inner-projects" class="inner-section">
                 <!--Projects Header-->
@@ -118,26 +116,41 @@
                 <!--Projects Main-->
                 <div id="main-projects" class="section-main">
                     <div class="flexbox_center_content">
-                    <div class="projects-title">
-                        <h3>Development Projects</h3>
-                    </div>
-                    <!--Projects Carousel-->
-                    <div class="projects-carousel-container">
-                        <div class="splide" data-splide='{"type":"loop","perPage":3,"speed":1000,"fixedHeight":"380px","gap":"40px"}'>
-                            <div class="splide__track">
-                                <div class="splide__list">
-                                    <div class="splide__slide preview-box soundboard"><h4>The GC Soundboard</h4></div>
-                                    <div class="splide__slide preview-box font"><h4>Font!</h4></div>
-                                    <div class="splide__slide preview-box period"><h4>Period.</h4></div>
-                                    <div class="splide__slide preview-box weather"><h4>Weather</h4></div>
-                                    <div class="splide__slide preview-box awake"><h4>Awake</h4></div>
-                                    <div class="splide__slide preview-box wheel"><h4>Colour Wheel</h4></div>
-                                    <div class="splide__slide preview-box sevdaliza"><h4>Sevdaliza</h4></div>
+                        <div class="projects-title">
+                            <h3>Development Projects</h3>
+                        </div>
+                        <!--Projects Carousel-->
+                        <div class="projects-carousel-container">
+                            <div class="splide"
+                                data-splide='{"type":"loop","perPage":3,"speed":1000,"fixedHeight":"380px","gap":"40px"}'>
+                                <div class="splide__track">
+                                    <div class="splide__list">
+                                        <div class="splide__slide preview-box soundboard" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/gc-soundboard/', '_blank');">
+                                            <h4>The GC Soundboard</h4>
+                                        </div>
+                                        <div class="splide__slide preview-box font" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/web-safe-font-preview/', '_blank');">
+                                            <h4>Font!</h4>
+                                        </div>
+                                        <div class="splide__slide preview-box period" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/javascript-quiz/', '_blank');">
+                                            <h4>Period.</h4>
+                                        </div>
+                                        <div class="splide__slide preview-box weather" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/weather-app/', '_blank');">
+                                            <h4>Weather</h4>
+                                        </div>
+                                        <div class="splide__slide preview-box awake" style="cursor: pointer;" onclick="window.open('https://awakebirmingham.co.uk/', '_blank');">
+                                            <h4>Awake</h4>
+                                        </div>
+                                        <div class="splide__slide preview-box wheel" style="cursor: pointer;" onclick="window.open('https://larlar.co.uk/websites/colour-wheel/index.php', '_blank');">
+                                            <h4>Colour Wheel</h4>
+                                        </div>
+                                        <div class="splide__slide preview-box sevdaliza" style="cursor: pointer;" onclick="window.open('https://larlar03.github.io/sevdaliza/', '_blank');">
+                                            <h4>Sevdaliza</h4>
+                                        </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
                 <!--Projects Footer-->
@@ -160,186 +173,184 @@
             </div>
             <!--Projects Inner Div Ends-->
 
-             <!--Home Inner Div Ends-->
-                   <!--Next Arrow-->
-                   <div class="arrow-container">
-                    <a href="#outer-photography" class="arrow-next">
-                        <i class="fas fa-chevron-down fa-2x"></i>
-                    </a>
-                </div>
+            <!--Next Arrow-->
+            <div class="arrow-container">
+                <a href="#outer-photography" class="arrow-next">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                </a>
+            </div>
         </section>
 
-       
 
         <!--PHOTOGRAPHY SECTION-------------------------------------------------------------------------------------->
         <section id="outer-photography" class="outer-section">
             <!--Prev Arrow-->
-<div class="arrow-container">
- <a href="#outer-projects" class="arrow-prev">
-     <i class="fas fa-chevron-up fa-2x"></i>
- </a>
-</div>
- <!--Prhotography Container Starts-->
- <div id="inner-photography" class="inner-section">
-     <!--Projects Header-->
-     <div id="photography-header" class="section-header">
-         <div class="logo">Lana Gordon</div>
-         <nav>
-             <ul>
-                <li><a href="#outer-home">Home</a></li>
-                <li><a href="#outer-projects">Projects</a></li>
-                <li><a class="active" href="#outer-photography">Photography</a></li>
-                <li><a href="#outer-about">About</a></li>
-             </ul>
-         </nav>
-     </div>
+            <div class="arrow-container">
+                <a href="#outer-projects" class="arrow-prev">
+                    <i class="fas fa-chevron-up fa-2x"></i>
+                </a>
+            </div>
+            
+            <!--Prhotography Container Starts-->
+            <div id="inner-photography" class="inner-section">
+                <!--Projects Header-->
+                <div id="photography-header" class="section-header">
+                    <div class="logo">Lana Gordon</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#outer-home">Home</a></li>
+                            <li><a href="#outer-projects">Projects</a></li>
+                            <li><a class="active" href="#outer-photography">Photography</a></li>
+                            <li><a href="#outer-about">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-     <!--Photography Main-->
-     <div id="main-photography" class="section-main">
-     <div class="flexbox_center_content">
-         <div class="photography-title">
-             <h3>Photography</h3>
-         </div>
-         <!--Photography Carousel-->
-         <div class="photography-carousel-container">
-            <div id="image-slider" class="splide" data-splide='{"type":"loop","perPage":3,"speed":1000,"gap":"40px"}'>
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="img/previews/girlyhood.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/purpose.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/reset.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/changing.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/crisis.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/spatial.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/beauty.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/define.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/build.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/previews/product.jpg">
-                        </li>
-                    </ul>
+                <!--Photography Main-->
+                <div id="main-photography" class="section-main">
+                    <div class="flexbox_center_content">
+                        <div class="photography-title">
+                            <h3>Photography</h3>
+                        </div>
+                        <!--Photography Carousel-->
+                        <div class="photography-carousel-container">
+                            <div id="image-slider" class="splide"
+                                data-splide='{"type":"loop","perPage":3,"speed":1000,"gap":"40px"}'>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="img/previews/girlyhood.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/purpose.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/reset.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/changing.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/crisis.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/spatial.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/beauty.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/define.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/build.jpg">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="img/previews/product.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Photography Footer-->
+                <div id="footer-projects" class="section-footer">
+                    <div class="footer-icons footer-icons-left">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-icons footer-icons-right">
+                        <ul>
+                            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-     </div>
+            <!--Photography Inner Div Ends-->
 
-     <!--Photography Footer-->
-     <div id="footer-projects" class="section-footer">
-         <div class="footer-icons footer-icons-left">
-             <ul>
-                 <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
-                             class="fab fa-linkedin-in"></i></a></li>
-                 <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
-                 </li>
-             </ul>
-         </div>
-         <div class="footer-icons footer-icons-right">
-             <ul>
-                 <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
-                 </li>
-             </ul>
-         </div>
-     </div>
- </div>
- <!--Photography Inner Div Ends-->
-        <!--Next Arrow-->
-        <div class="arrow-container">
-         <a href="#outer-about" class="arrow-next">
-             <i class="fas fa-chevron-down fa-2x"></i>
-         </a>
-     </div>
-</section>
-
-<div class="divider"></div>
+            <!--Next Arrow-->
+            <div class="arrow-container">
+                <a href="#outer-about" class="arrow-next">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                </a>
+            </div>
+        </section>
 
 
-<!--ABOUT SECTION-------------------------------------------------------------------------------------->
-<section id="outer-about" class="outer-section">
-     <!--Prev Arrow-->
-<div class="arrow-container">
-    <a href="#outer-photography" class="arrow-prev">
-        <i class="fas fa-chevron-up fa-2x"></i>
-    </a>
-   </div>
-          
-    <!--About Container Starts-->
-    <div id="inner-about" class="inner-section">
-        <!--About Header-->
-        <div id="header-about" class="section-header">
-            <div class="logo">Lana Gordon</div>
-            <nav>
-                <ul>
-                    <li><a href="#outer-home">Home</a></li>
-                <li><a href="#outer-projects">Projects</a></li>
-                <li><a href="#outer-photography">Photography</a></li>
-                <li><a class="active" href="#outer-about">About</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!--ABOUT SECTION-------------------------------------------------------------------------------------->
+        <section id="outer-about" class="outer-section">
+            <!--Prev Arrow-->
+            <div class="arrow-container">
+                <a href="#outer-photography" class="arrow-prev">
+                    <i class="fas fa-chevron-up fa-2x"></i>
+                </a>
+            </div>
 
-        <!--About Main-->
-        <div id="main-about" class="section-main">
-            <div class="about-left"></div>
-            <div class="about-right">
-                
-                    <div class="about-title">
-                    <h3>Lana Gordon</h3>
-                    <hr>
-                    <h5>Front End Developer & Visual Designer</h5>
-                    <h5>Birmingham UK</h5>
+            <!--About Container Starts-->
+            <div id="inner-about" class="inner-section">
+                <!--About Header-->
+                <div id="header-about" class="section-header">
+                    <div class="logo">Lana Gordon</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#outer-home">Home</a></li>
+                            <li><a href="#outer-projects">Projects</a></li>
+                            <li><a href="#outer-photography">Photography</a></li>
+                            <li><a class="active" href="#outer-about">About</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="about-body">
-                    <p>I'm Junior UI Designer and Front-End Development, creating websites from design to
-                        deployment.</p>
 
-                        <p>My development skils include HTML, CSS, SCSS, JavaScript, jQuery, ReactJS, the
-                        Command-Line, and Git.
-                        I also have broad range of skills in Photography and Visual Design, which include
-                        wireframing, resposive design, retouching.</p>
+                <!--About Main-->
+                <div id="main-about" class="section-main">
+                    <div class="about-left"></div>
+                    <div class="about-right">
+
+                        <div class="about-title">
+                            <h3>Lana Gordon</h3>
+                            <hr>
+                            <h5>Front End Developer & Visual Designer</h5>
+                            <h5>Birmingham, UK</h5>
+                        </div>
+                        <div class="about-body">
+                            <p>I'm Junior UI Designer and Front-End Development, creating websites from design to
+                                deployment.</p>
+
+                            <p>My development skils include HTML, CSS, SCSS, JavaScript, jQuery, ReactJS, the
+                                Command-Line, and Git.
+                                I also have broad range of skills in Photography and Visual Design, which include
+                                wireframing, resposive design, retouching.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--About Footer-->
+                <div id="footer-about" class="section-footer">
+                    <div class="footer-icons footer-icons-left">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-icons footer-icons-right">
+                        <ul>
+                            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!--About Footer-->
-        <div id="footer-about" class="section-footer">
-            <div class="footer-icons footer-icons-left">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-icons footer-icons-right">
-                <ul>
-                    <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+        </section>
+<!--SECTIONS END-->
     </main>
 
     <!--Bootstrap JS-->
@@ -353,20 +364,17 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
 
-    <!--Splide-->
+    <!--Splide Carousel-->
     <script>
-        new Splide( '.splide' ).mount();
+        new Splide('.splide').mount();
 
-        document.addEventListener( 'DOMContentLoaded', function () {
-	new Splide( '#image-slider' ).mount();
-} );
-
-
-        
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-slider').mount();
+        });
     </script>
 
-    
-    </body>
+
+</body>
 
 
 </html>

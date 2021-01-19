@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        main {
+            width: 90%;
+            height: 100vh;
+            margin: 0 auto;
+
+            /*Snap Scroll*/
+            display: flex;
+            flex-flow: column nowrap;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            cursor: scroll;
+
+
+            /*SECTION CONTAINERS*/
+            .outer-section {
+                width: 100%;
+                height: 100vh;
+                margin: 0 0 100px 0;
+                display: flex;
+                flex-flow: column nowrap;
+                scroll-snap-align: start;
+
+                /*PREV & NEXT PAGE ARROWS*/
+                .arrow-container {
+                    width: 100%;
+                    height: auto;
+                    margin: 10px 0;
+                    text-align: center;
+
+                    .arrow-prev {
+                        @include links($lightgrey, $grey, $pink);
+
+                        a {
+                            i {
+                                vertical-align: top;
+                            }
+                        }
+                    }
+
+                    .arrow-next {
+                        @include links($lightgrey, $grey, $pink);
+                    }
+                }
+
+                /*INNER SECTIONS*/
+                .inner-section {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    overflow: hidden;
+
+
+
+                    /*HEADER*/
+                    .section-header {
+                        width: 100%;
+                        height: 8%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-content: center;
+
+                        .logo {
+                            width: 30%;
+                        }
+
+                        nav {
+                            width: 70%;
+                            text-align: right;
+
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+
+                                li {
+                                    display: inline-block;
+                                    padding-left: 20px;
+
+                                    a {
+                                        @include links($grey, $pink, $pink);
+
+                                        &:hover {
+                                            transition: 0.4s ease-in;
+                                        }
+                                    }
+
+                                    .active {
+                                        color: $purple !important;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /*MAIN*/
+                    .section-main {
+                        width: 100%;
+                        height: 84%;
+                    }
+
+                    /*FOOTER*/
+                    .section-footer {
+                        width: 100%;
+                        height: 8%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-content: center;
+
+
+                        .footer-icons {
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+
+                                li {
+                                    display: inline-block;
+
+                                    a {
+                                        @include links($purple, $grey, $pink);
+
+                                        &:hover {
+                                            transition: 0.4s ease-in;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .footer-icons-left {
+                            width: 50%;
+
+                            ul {
+                                li {
+                                    padding-right: 10px;
+                                }
+                            }
+
+                        }
+
+                        .footer-icons-right {
+                            width: 50%;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
