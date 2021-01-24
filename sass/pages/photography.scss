@@ -1,0 +1,1005 @@
+/*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*BACK TO TOP ARROW BUTTON*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*MAIN*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*PROJECT PREVIEW GRID*/
+            .photography-grid-container {
+                width: 100%;
+                height: auto;
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: 308px;
+                grid-template-rows: repeat(10, 206px);
+                gap: 45px 45px;
+                justify-content: center;
+                grid-template-areas:
+                    "girlyhood"
+                    "purpose"
+                    "reset"
+                    "changing"
+                    "crisis"
+                    "spatial"
+                    "beauty"
+                    "define"
+                    "build"
+                    "product";
+            }
+
+            .girlyhood {
+                grid-area: girlyhood;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .purpose {
+                grid-area: purpose;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .reset {
+                grid-area: reset;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .changing {
+                grid-area: changing;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .crisis {
+                grid-area: crisis;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .spatial {
+                grid-area: spatial;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .beauty {
+                grid-area: beauty;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .define {
+                grid-area: define;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .build {
+                grid-area: build;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .product {
+                grid-area: product;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+/*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*BACK TO TOP ARROW BUTTON*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*MAIN*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*PROJECT PREVIEW GRID*/
+            .photography-grid-container {
+                width: 100%;
+                height: auto;
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 308px);
+                grid-template-rows: repeat(5, 206px);
+                gap: 45px 45px;
+                justify-content: center;
+                grid-template-areas:
+                    "girlyhood purpose"
+                    "reset changing"
+                    "crisis spatial"
+                    "beauty define"
+                    "build product";
+            }
+
+            .girlyhood {
+                grid-area: girlyhood;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .purpose {
+                grid-area: purpose;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .reset {
+                grid-area: reset;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .changing {
+                grid-area: changing;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .crisis {
+                grid-area: crisis;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .spatial {
+                grid-area: spatial;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .beauty {
+                grid-area: beauty;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .define {
+                grid-area: define;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .build {
+                grid-area: build;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .product {
+                grid-area: product;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*BACK TO TOP ARROW BUTTON*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*MAIN*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*PROJECT PREVIEW GRID*/
+            .photography-grid-container {
+                width: 100%;
+                height: auto;
+                margin: 60px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 308px);
+                grid-template-rows: repeat(5, 206px);
+                gap: 45px 45px;
+                justify-content: center;
+                grid-template-areas:
+                    "girlyhood purpose"
+                    "reset changing"
+                    "crisis spatial"
+                    "beauty define"
+                    "build product";
+            }
+
+            .girlyhood {
+                grid-area: girlyhood;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .purpose {
+                grid-area: purpose;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .reset {
+                grid-area: reset;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .changing {
+                grid-area: changing;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .crisis {
+                grid-area: crisis;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .spatial {
+                grid-area: spatial;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .beauty {
+                grid-area: beauty;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .define {
+                grid-area: define;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .build {
+                grid-area: build;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .product {
+                grid-area: product;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+/*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*BACK TO TOP ARROW BUTTON*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*MAIN*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*PROJECT PREVIEW GRID*/
+            .photography-grid-container {
+                width: 100%;
+                height: auto;
+                margin: 60px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 308px);
+                grid-template-rows: repeat(5, 206px);
+                gap: 50px 50px;
+                justify-content: center;
+                grid-template-areas:
+                    "girlyhood purpose"
+                    "reset changing"
+                    "crisis spatial"
+                    "beauty define"
+                    "build product";
+            }
+
+            .girlyhood {
+                grid-area: girlyhood;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .purpose {
+                grid-area: purpose;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .reset {
+                grid-area: reset;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .changing {
+                grid-area: changing;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .crisis {
+                grid-area: crisis;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .spatial {
+                grid-area: spatial;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .beauty {
+                grid-area: beauty;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .define {
+                grid-area: define;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .build {
+                grid-area: build;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .product {
+                grid-area: product;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*==============IPAD PRO==============*/
+@media (min-width: 1024px) and (max-width: 1366px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 18px;
+        position: relative;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*BACK TO TOP ARROW BUTTON*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*MAIN*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 5px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*PROJECT PREVIEW GRID*/
+            .photography-grid-container {
+                width: 100%;
+                height: auto;
+                margin: 60px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 462px);
+                grid-template-rows: repeat(5, 309px);
+                gap: 40px 40px;
+                justify-content: center;
+                grid-template-areas:
+                    "girlyhood purpose"
+                    "reset changing"
+                    "crisis spatial"
+                    "beauty define"
+                    "build product";
+            }
+
+            .girlyhood {
+                grid-area: girlyhood;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .purpose {
+                grid-area: purpose;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .reset {
+                grid-area: reset;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .changing {
+                grid-area: changing;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .crisis {
+                grid-area: crisis;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .spatial {
+                grid-area: spatial;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .beauty {
+                grid-area: beauty;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .define {
+                grid-area: define;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .build {
+                grid-area: build;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .product {
+                grid-area: product;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
