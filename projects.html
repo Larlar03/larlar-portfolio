@@ -29,7 +29,33 @@
 </head>
 
 <body>
-    <header>Insert mob home header</header>
+   <!--MOBILE HEADER-->
+   <header class=header-mob>
+    <!--MOBILE NAV-->
+    <div class="navbar navbar-expand-xxl navbar-light">
+        <a class="navbar-brand" href="index.html">Lana Gordon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link top-nav-item" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="projects.html">Projects<span
+                    class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="photography.html">Photography</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div onclick="topFunction()" id="back-to-top" title="Go to top">
+    <a href="" class="">
+        <i class="fas fa-chevron-up fa-2x"></i>
+    </a>
+</div>
+
 
     <main>
         <section class="heading">
@@ -47,17 +73,55 @@
             </div>
         </section>
 
-        <section class="project-previews">
-            Insert css grid
+        <section class="project-grid-container">
+            <div class="project soundboard" onclick="window.open('https://larlar03.github.io/gc-soundboard/', '_blank');">
+                <h2>The GC Soundboard</h2>
+            </div>
+            <div class="project font"  onclick="window.open('https://larlar03.github.io/web-safe-font-preview/', '_blank');">
+                <h2>Font!</h2>
+            </div>
+            <div class="project period" onclick="window.open('https://larlar03.github.io/javascript-quiz/', '_blank');">
+                <h2>Period.</h2>
+            </div>
+            <div class="project weather"  onclick="window.open('https://larlar03.github.io/weather-app/', '_blank');">
+                <h2>Weather</h2>
+            </div>
+            <div class="project awake" onclick="window.open('https://awakebirmingham.co.uk/', '_blank');">
+                <h2>Awake</h2>
+            </div>
+            <div class="project wheel"  onclick="window.open('https://larlar.co.uk/websites/colour-wheel/index.php', '_blank');">
+                <h2>Colour Wheel</h2>
+            </div>
+            <div class="project sevdaliza" onclick="window.open('https://larlar03.github.io/sevdaliza/', '_blank');">
+                <h2>Sevdaliza</h2>
+            </div>
         </section>
-
-        <footer>
-            back to top arrow
-            <a href="" class="">
-                <i class="fas fa-chevron-up fa-2x"></i>
-            </a>
-        </footer>
+    
     </main>
+
+  
+    <!--BACK TO TOP OF THE PAGE BUTTON-->
+    <script>
+        //Get the button:
+mybutton = document.getElementById("back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
   
 
     <!--Bootstrap JS-->

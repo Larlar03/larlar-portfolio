@@ -29,6 +29,108 @@
 </head>
 
 <body>
+     <!--MOBILE HEADER-->
+   <header class=header-mob>
+    <!--MOBILE NAV-->
+    <div class="navbar navbar-expand-xxl navbar-light">
+        <a class="navbar-brand" href="index.html">Lana Gordon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link top-nav-item" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link active" href="photography.html">Photography<span
+                    class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div onclick="topFunction()" id="back-to-top" title="Go to top">
+    <a href="" class="">
+        <i class="fas fa-chevron-up fa-2x"></i>
+    </a>
+</div>
+
+
+    <main>
+        <section class="heading">
+            <h1 class="title">Photography</h1>
+            <hr>
+            <div class="social-links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/lana-gordon-7a83a286/" target="_blank"><i
+                        class="fab fa-linkedin-in fa-lg"></i></a></li>
+            <li><a href="https://github.com/Larlar03" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            </li>
+            <li><a href="mailto:lanagordon03@gmail.com" target="_blank"><i class="fas fa-at fa-lg"></i></a>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="photography-grid-container">
+            <div class="photography girlyhood" href="">
+                <img src="img/previews/girlyhood.jpg">
+            </div>
+            <div class="photography purpose" href="">
+                <img src="img/previews/purpose.jpg">
+            </div>
+            <div class="photography reset" href="">
+                <img src="img/previews/reset.jpg">
+            </div>
+            <div class="photography changing" href="">
+                <img src="img/previews/changind.jpg">
+            </div>
+            <div class="photography crisis" href="">
+                <img src="img/previews/crisis.jpg">
+            </div>
+            <div class="photography spatial" href="">
+                <img src="img/previews/spatial.jpg">
+            </div>
+            <div class="photography beauty" href="">
+                <img src="img/previews/beauty.jpg">
+            </div>
+            <div class="photography define" href="">
+                <img src="img/previews/define.jpg">
+            </div>
+            <div class="photography build" href="">
+                <img src="img/previews/build.jpg">
+            </div>
+            <div class="photography product" href="">
+                <img src="img/previews/product.jpg">
+            </div>
+        </section>
+    
+    </main>
+
+  
+    <!--BACK TO TOP OF THE PAGE BUTTON-->
+    <script>
+        //Get the button:
+mybutton = document.getElementById("back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
   
 
     <!--Bootstrap JS-->
