@@ -1,11 +1,10 @@
  body {
-     main#main-mob-home{
+     main#main-mob-home {
          display: none !important;
-     }
+     } 
 
      main#desktop {
-
-         /*HOME SECTION*/
+         /*Home section*/
          #outer-home {
              #inner-home {
                  div#main-home {
@@ -23,7 +22,7 @@
              }
          }
 
-         /*PROJECTS SECTION*/
+         /*Projects section*/
          #outer-projects {
              #inner-projects {
                  div#main-projects {
@@ -36,13 +35,13 @@
                          text-align: center;
                      }
 
-                     /*SLIDESHOW CAROUSEL*/
+                     /*Projects carousel container*/
                      .projects-carousel-container {
                          width: 100%;
                          min-height: 380px;
                          text-align: center;
 
-                         /*PAGINATION DOTS STYLE*/
+                         /*pagination dots style*/
                          .splide__pagination {
                              bottom: -2em;
 
@@ -55,7 +54,7 @@
                              }
                          }
 
-                         /*ARROWS STYLE*/
+                         /*Carousel arrows style*/
                          .splide__arrows {
                              .splide__arrow {
                                  background: rgba(0, 0, 0, 0);
@@ -72,7 +71,7 @@
                              }
                          }
 
-                         /*VERTICALLY ALIGN PREVIEW HEADINGS IN BOX*/
+                         /*Vertically align preview headings in box*/
                          .preview-box {
                              display: flex;
                              align-items: center;
@@ -112,7 +111,7 @@
              }
          }
 
-         /*PHOTOGRAPHY SECTION*/
+         /*Photography section*/
          #outer-photography {
              #inner-photography {
                  div#main-photography {
@@ -125,12 +124,12 @@
                          text-align: center;
                      }
 
-                     /*SLIDESHOW CAROUSEL*/
+                     /*photography slideshow carousel*/
                      .photography-carousel-container {
                          width: 100%;
                          height: auto;
 
-                         /*PAGINATION DOTS STYLE*/
+                         /*Pagination dots style*/
                          .splide__pagination {
                              bottom: -2em;
 
@@ -143,7 +142,7 @@
                              }
                          }
 
-                         /*ARROWS STYLE*/
+                         /*carousel arrows style*/
                          .splide__arrows {
                              .splide__arrow {
                                  background: rgba(0, 0, 0, 0);
@@ -169,7 +168,7 @@
              }
          }
 
-         /*ABOUT SECTION*/
+         /*About section*/
          #outer-about {
              #inner-about {
                  div#main-about {

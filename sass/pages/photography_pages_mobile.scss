@@ -9,10 +9,12 @@
             position: relative;
             scroll-behavior: smooth;
 
+            /*Hide desktop*/
             main#desktop {
                 display: none !important;
             }
 
+            /*Mobile*/
             main#mobile {
                 display: block !important;
                 width: 100%;
@@ -20,6 +22,7 @@
                 display: flex;
                 flex-flow: column nowrap;
 
+                /*Header*/
                 .header-mob {
                     .navbar-brand {
                         color: $grey;
@@ -27,7 +30,6 @@
 
                     .navbar-toggler {
                         border-color: rgba(0, 0, 0, 0);
-
                     }
 
                     .navbar-collapse {
@@ -39,7 +41,7 @@
                 }
 
 
-                /*BACK TO TOP ARROW BUTTON*/
+                /*Back to the top arrow*/
                 div#back-to-top {
                     /* Hidden by default */
                     display: none;
@@ -55,6 +57,7 @@
                     }
                 }
 
+                /*Main*/
                 .main {
                     width: 100%;
                     height: auto;
@@ -101,7 +104,7 @@
 
                 }
 
-                /*PROJECT PREVIEW GRID*/
+                /*Photography preview grid*/
                 .photography-grid-container {
                     width: 100%;
                     height: auto;
@@ -138,10 +141,12 @@
             position: relative;
             scroll-behavior: smooth;
 
+            /*Hide desktop*/
             main#desktop {
                 display: none !important;
             }
 
+            /*Mobile*/
             main#mobile {
                 display: block !important;
                 width: 100%;
@@ -149,6 +154,7 @@
                 display: flex;
                 flex-flow: column nowrap;
 
+                /*Header*/
                 .header-mob {
                     .navbar-brand {
                         color: $grey;
@@ -168,7 +174,7 @@
                 }
 
 
-                /*BACK TO TOP ARROW BUTTON*/
+                /*Back to the top arrow*/
                 div#back-to-top {
                     /* Hidden by default */
                     display: none;
@@ -184,6 +190,7 @@
                     }
                 }
 
+                /*Main*/
                 .main {
                     width: 100%;
                     height: auto;
@@ -230,7 +237,7 @@
 
                 }
 
-                /*PROJECT PREVIEW GRID*/
+                /*Project preview grid*/
                 .photography-grid-container {
                     width: 100%;
                     height: auto;
@@ -267,10 +274,12 @@
             position: relative;
             scroll-behavior: smooth;
 
+            /*Hide desktop*/
             main#desktop {
                 display: none !important;
             }
 
+            /*Mobile*/
             main#mobile {
                 display: block !important;
                 width: 100%;
@@ -278,6 +287,7 @@
                 display: flex;
                 flex-flow: column nowrap;
 
+                /*Header*/
                 .header-mob {
                     .navbar-brand {
                         color: $grey;
@@ -285,7 +295,6 @@
 
                     .navbar-toggler {
                         border-color: rgba(0, 0, 0, 0);
-
                     }
 
                     .navbar-collapse {
@@ -297,7 +306,7 @@
                 }
 
 
-                /*BACK TO TOP ARROW BUTTON*/
+                /*Back to the top arrow*/
                 div#back-to-top {
                     /* Hidden by default */
                     display: none;
@@ -313,6 +322,7 @@
                     }
                 }
 
+                /*Main*/
                 .main {
                     width: 100%;
                     height: auto;
@@ -358,7 +368,7 @@
                     }
                 }
 
-                /*PROJECT PREVIEW GRID*/
+                /*Photography preview grid*/
                 .photography-grid-container {
                     width: 100%;
                     height: auto;
@@ -385,7 +395,7 @@
 }
 
 /*==============TABLET LANDSCAPE==============*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)  {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     html {
         body {
             width: 100vw;
@@ -395,10 +405,12 @@
             position: relative;
             scroll-behavior: smooth;
 
+            /*Hide desktop*/
             main#desktop {
                 display: none !important;
             }
 
+            /*Mobile*/
             main#mobile {
                 display: block !important;
                 width: 100%;
@@ -406,6 +418,7 @@
                 display: flex;
                 flex-flow: column nowrap;
 
+                /*Header*/
                 .header-mob {
                     .navbar-brand {
                         color: $grey;
@@ -413,7 +426,6 @@
 
                     .navbar-toggler {
                         border-color: rgba(0, 0, 0, 0);
-
                     }
 
                     .navbar-collapse {
@@ -425,7 +437,7 @@
                 }
 
 
-                /*BACK TO TOP ARROW BUTTON*/
+                /*Back to the top arrow*/
                 div#back-to-top {
                     /* Hidden by default */
                     display: none;
@@ -441,6 +453,7 @@
                     }
                 }
 
+                /*Main*/
                 .main {
                     width: 100%;
                     height: auto;
@@ -486,7 +499,7 @@
                     }
                 }
 
-                /*PROJECT PREVIEW GRID*/
+                /*Photography preview grid*/
                 .photography-grid-container {
                     width: 100%;
                     height: auto;
@@ -496,135 +509,6 @@
                     grid-template-rows: auto;
                     gap: 40px 0;
                     justify-content: center;
-
-                }
-
-                .photography {
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-/*==============IPAD PRO==============*/
-@media (min-width: 1024px) and (max-width: 1366px)  {
-    html {
-        body {
-            width: 100vw;
-            height: 100%;
-            margin: 0 auto;
-            font-size: 16px;
-            position: relative;
-            scroll-behavior: smooth;
-
-            main#desktop {
-                display: none !important;
-            }
-
-            main#mobile {
-                display: block !important;
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-flow: column nowrap;
-
-                .header-mob {
-                    .navbar-brand {
-                        color: $grey;
-                    }
-
-                    .navbar-toggler {
-                        border-color: rgba(0, 0, 0, 0);
-
-                    }
-
-                    .navbar-collapse {
-                        .navbar-nav {
-                            text-align: right;
-                            padding-right: 10px;
-                        }
-                    }
-                }
-
-
-                /*BACK TO TOP ARROW BUTTON*/
-                div#back-to-top {
-                    /* Hidden by default */
-                    display: none;
-                    position: fixed;
-                    bottom: 5px;
-                    right: -2px;
-                    /* Make sure it does not overlap */
-                    z-index: 99;
-                    padding: 15px;
-
-                    a {
-                        color: $lightgrey;
-                    }
-                }
-
-                .main {
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-
-                    .heading {
-                        text-align: center;
-
-                        h1 {
-                            color: $grey;
-                            font-size: 1.3rem;
-                            margin: 40px 0 20px 0;
-                        }
-
-                        hr {
-                            width: 40px;
-                            border-top: 2px solid $lightgrey;
-                        }
-
-                        .social-links {
-                            width: 100%;
-                            height: auto;
-                            margin-top: 20px;
-
-                            ul {
-                                list-style: none;
-                                padding: 0;
-                                margin: 0;
-                                text-align: center;
-
-                                li {
-                                    display: inline-block;
-                                    padding: 0 5px;
-
-                                    a {
-                                        color: $purple;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                /*PROJECT PREVIEW GRID*/
-                .photography-grid-container {
-                    width: 100%;
-                    height: auto;
-                    margin: 40px auto;
-                    display: grid;
-                    grid-template-columns: 80%;
-                    grid-template-rows: auto;
-                    gap: 40px 0;
-                    justify-content: center;
-
                 }
 
                 .photography {

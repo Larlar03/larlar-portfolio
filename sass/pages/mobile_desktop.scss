@@ -6,12 +6,12 @@
         margin: 0 auto;
         font-size: 16px;
 
-        /*HIDE DESKTOP*/
+        /*Hide desktop*/
         main#desktop {
             display: none !important;
         }
 
-        /*MOBILE HOME*/
+        /*Mobile home*/
         main#main-mob-home {
             display: flex !important;
             width: 100vw;
@@ -19,7 +19,7 @@
             @include gradient(to bottom, $about-gradient);
             flex-flow: column nowrap;
 
-            /*MOBILE HEADER*/
+            /*Mobile header*/
             .header-mob-home {
                 .navbar-brand {
                     color: white;
@@ -27,7 +27,6 @@
 
                 .navbar-toggler {
                     border-color: rgba(0, 0, 0, 0);
-
                 }
 
                 .navbar-collapse {
@@ -38,10 +37,11 @@
                 }
             }
 
-            /*MOBILE HERO*/
+            /*Mobile hero*/
             .hero-mob {
-                width: 100%;
+                width: 90%;
                 height: 95%;
+                margin: 0 auto;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
@@ -61,13 +61,13 @@
 
                     a {
                         padding: 0 7px;
-                        color: $grey;
+                        color: $darkgrey;
                         text-decoration: underline;
                     }
                 }
             }
 
-            /*MOBILE FOOTER*/
+            /*Mobile footer*/
             .footer-mob {
                 width: 100%;
                 height: 5%;
@@ -85,7 +85,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: white;
@@ -106,20 +106,20 @@
         margin: 0 auto;
         font-size: 16px;
 
-        /*HIDE DESKTOP*/
+        /*Hide desktop*/
         main#desktop {
             display: none !important;
         }
 
-        /*MOBILE HOME*/
+        /*Mobile home*/
         main#main-mob-home {
             display: flex !important;
             width: 100vw;
             height: 100vh;
-            @include gradient(to bottom, $home-gradient);
+            @include gradient(to bottom, $about-gradient);
             flex-flow: column nowrap;
 
-            /*MOBILE HEADER*/
+            /*Mobile header*/
             .header-mob-home {
                 .navbar-brand {
                     color: white;
@@ -127,12 +127,11 @@
 
                 .navbar-toggler {
                     border-color: rgba(0, 0, 0, 0);
-
                 }
 
                 .navbar-collapse {
 
-                    /*MAKE NAV LINKS HORIZONTALLY LINE*/
+                    /*Make nav links horizontal line*/
                     .navbar-nav {
                         flex-direction: row;
                         justify-content: flex-end;
@@ -146,7 +145,7 @@
                 }
             }
 
-            /*MOBILE HERO*/
+            /*Mobile hero*/
             .hero-mob {
                 width: 100%;
                 height: 95%;
@@ -169,13 +168,13 @@
 
                     a {
                         padding: 0 7px;
-                        color: $grey;
+                        color: $darkgrey;
                         text-decoration: underline;
                     }
                 }
             }
 
-            /*MOBILE FOOTER*/
+            /*Mobile footer*/
             .footer-mob {
                 width: 100%;
                 height: 5%;
@@ -193,7 +192,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: white;
@@ -215,20 +214,20 @@
         margin: 0 auto;
         font-size: 18px;
 
-        /*HIDE DESKTOP*/
+        /*Hide desktop*/
         main#desktop {
             display: none !important;
         }
 
-        /*MOBILE HOME*/
+        /*Mobile home*/
         main#main-mob-home {
             display: flex !important;
             width: 100vw;
             height: 100vh;
-            @include gradient(to bottom, $home-gradient);
+            @include gradient(to bottom, $about-gradient);
             flex-flow: column nowrap;
 
-            /*MOBILE HEADER*/
+            /*Mobile header*/
             .header-mob-home {
                 .navbar-brand {
                     color: white;
@@ -246,7 +245,7 @@
                 }
             }
 
-            /*MOBILE HERO*/
+            /*Mobile hero*/
             .hero-mob {
                 width: 100%;
                 height: 95%;
@@ -269,13 +268,13 @@
 
                     a {
                         padding: 0 7px;
-                        color: $grey;
+                        color: $darkgrey;
                         text-decoration: underline;
                     }
                 }
             }
 
-            /*MOBILE FOOTER*/
+            /*obile footer*/
             .footer-mob {
                 width: 100%;
                 height: 5%;
@@ -293,7 +292,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: white;
@@ -314,20 +313,20 @@
         margin: 0 auto;
         font-size: 18px;
 
-        /*HIDE DESKTOP*/
+        /*Hide desktop*/
         main#desktop {
             display: none !important;
         }
 
-        /*MOBILE HOME*/
+        /*Mobile home*/
         main#main-mob-home {
             display: flex !important;
             width: 100vw;
             height: 100vh;
-            @include gradient(to bottom, $home-gradient);
+            @include gradient(to bottom, $about-gradient);
             flex-flow: column nowrap;
 
-            /*MOBILE HEADER*/
+            /*Mobile header*/
             .header-mob-home {
                 .navbar-brand {
                     color: white;
@@ -340,7 +339,7 @@
 
                 .navbar-collapse {
 
-                    /*MAKE NAV LINKS HORIZONTALLY LINE*/
+                    /*Make nav links a horizontal line*/
                     .navbar-nav {
                         flex-direction: row;
                         justify-content: flex-end;
@@ -354,7 +353,7 @@
                 }
             }
 
-            /*MOBILE HERO*/
+            /*Mobile hero*/
             .hero-mob {
                 width: 100%;
                 height: 95%;
@@ -377,13 +376,13 @@
 
                     a {
                         padding: 0 7px;
-                        color: $grey;
+                        color: $darkgrey;
                         text-decoration: underline;
                     }
                 }
             }
 
-            /*MOBILE FOOTER*/
+            /*Mobile footer*/
             .footer-mob {
                 width: 100%;
                 height: 5%;
@@ -401,7 +400,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: white;

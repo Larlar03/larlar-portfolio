@@ -6,16 +6,18 @@ html {
         height: 100%;
         margin: 0 auto;
 
+        /*Hide mobile*/
         main#mobile {
             display: none !important;
         }
 
+        /*Desktop*/
         main#desktop {
             width: 90%;
             height: 100vh;
             margin: 0 auto;
 
-            /*SECTION CONTAINERS*/
+            /*Section containers*/
             .outer-section {
                 width: 100%;
                 height: 100vh;
@@ -24,7 +26,7 @@ html {
                 flex-flow: column nowrap;
                 scroll-snap-align: start;
 
-                /*PREV & NEXT PAGE ARROWS*/
+                /*prev & next page arrows*/
                 .arrow-container {
                     width: 100%;
                     height: auto;
@@ -46,7 +48,7 @@ html {
                     }
                 }
 
-                /*INNER SECTIONS*/
+                /*Inner sections*/
                 .inner-section {
                     width: 100%;
                     height: 100%;
@@ -54,9 +56,7 @@ html {
                     flex-flow: column nowrap;
                     overflow: hidden;
 
-
-
-                    /*HEADER*/
+                    /*Header*/
                     .section-header {
                         width: 100%;
                         height: 8%;
@@ -98,7 +98,7 @@ html {
                         }
                     }
 
-                    /*MAIN*/
+                    /*Main*/
                     .section-main {
                         width: 100%;
                         height: 84%;
@@ -116,7 +116,7 @@ html {
                             height: auto;
 
 
-                            /*PAGINATION DOTS STYLE*/
+                            /*Pagination dots style*/
                             .splide__pagination {
                                 bottom: -2em;
 
@@ -129,7 +129,7 @@ html {
                                 }
                             }
 
-                            /*ARROWS STYLE*/
+                            /*Carousel arrow style*/
                             .splide__arrows {
                                 .splide__arrow {
                                     background: rgba(0, 0, 0, 0);
@@ -156,7 +156,7 @@ html {
                         }
                     }
 
-                    /*FOOTER*/
+                    /*Footer*/
                     .section-footer {
                         width: 100%;
                         height: 8%;
