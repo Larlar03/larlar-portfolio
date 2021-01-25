@@ -1,7 +1,7 @@
 /* Error: Undefined mixin.
  *    ,
- * 19 |             @include gradient(to bottom, $home-gradient);
- *    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 19 |             @include gradient(to bottom, $about-gradient);
+ *    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
  *   sass/pages/mobile_desktop.scss 19:13  root stylesheet */
 
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502              @include gradient(to bottom, $home-gradient);\a    \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass/pages/mobile_desktop.scss 19:13  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502              @include gradient(to bottom, $about-gradient);\a    \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass/pages/mobile_desktop.scss 19:13  root stylesheet";
 }

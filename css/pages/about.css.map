@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"about.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/pages/about.scss"],"names":[],"mappings":"AACA,+CACA,KACI,WACA,YACA,cACA,eAUA,YACI,WACA,UACA,iBAEA,8BACI,WACA,YAEA,iCACI,gBACA,UACA,SACA,kBAEA,oCACI,qBACA,cAEA,sCACI","file":"about.css"}

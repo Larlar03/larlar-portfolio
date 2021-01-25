@@ -6,6 +6,7 @@
         margin: 0 auto;
         font-size: 16px;
         position: relative;
+        scroll-behavior: smooth;
 
         .header-mob {
             .navbar-brand {
@@ -164,6 +165,7 @@
         margin: 0 auto;
         font-size: 16px;
         position: relative;
+        scroll-behavior: smooth;
 
         .header-mob {
             .navbar-brand {
@@ -321,6 +323,7 @@
         margin: 0 auto;
         font-size: 16px;
         position: relative;
+        scroll-behavior: smooth;
 
         .header-mob {
             .navbar-brand {
@@ -392,7 +395,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: $purple;
@@ -475,6 +478,7 @@
         margin: 0 auto;
         font-size: 16px;
         position: relative;
+        scroll-behavior: smooth;
 
         .header-mob {
             .navbar-brand {
@@ -546,7 +550,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: $purple;
@@ -628,6 +632,7 @@
         margin: 0 auto;
         font-size: 18px;
         position: relative;
+        scroll-behavior: smooth;
 
         .header-mob {
             .navbar-brand {
@@ -699,7 +704,7 @@
 
                         li {
                             display: inline-block;
-                            padding: 0 5px;
+                            padding: 0 10px;
 
                             a {
                                 color: $purple;

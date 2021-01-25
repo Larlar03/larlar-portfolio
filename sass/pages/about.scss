@@ -1,0 +1,464 @@
+/*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 16px;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        main {
+            width: 85%;
+            height: 80%;
+            margin: 30px auto 0 auto;
+            border-radius: 10px;
+            @include gradient(to bottom, $about-gradient);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .heading {
+                width: 85%;
+
+                h1 {
+                    font-size: 2.25rem;
+                }
+
+                hr {
+                    border-top: 2px solid white;
+                }
+
+                h2 {
+                    font-size: 1.125rem;
+                }
+            }
+
+            .about-text {
+                width: 85%;
+                color: white;
+                line-height: 1.5;
+
+                p {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+
+            .footer-links-mob {
+                width: 100%;
+                height: auto;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        padding: 0 5px;
+
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 16px;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        main {
+            width: 85%;
+            height: 100%;
+            margin: 30px auto 0 auto;
+            border-radius: 10px;
+            @include gradient(to bottom, $about-gradient);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .heading {
+                width: 85%;
+
+                h1 {
+                    font-size: 2.25rem;
+                }
+
+                hr {
+                    border-top: 2px solid white;
+                }
+
+                h2 {
+                    font-size: 1.125rem;
+                }
+            }
+
+            .about-text {
+                width: 85%;
+                color: white;
+
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+            margin: 0 auto;
+
+            .footer-links-mob {
+                width: 100%;
+                height: auto;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        padding: 0 5px;
+
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 18px;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        main {
+            width: 85%;
+            height: 80%;
+            margin: 30px auto;
+            border-radius: 10px;
+            @include gradient(to bottom, $about-gradient);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .heading {
+                width: 80%;
+
+                h1 {
+                    font-size: 2.6rem;
+                }
+
+                hr {
+                    border-top: 2px solid white;
+                }
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .about-text {
+                width: 80%;
+                color: white;
+                line-height: 1.5;
+
+                p {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+
+            .footer-links-mob {
+                width: 100%;
+                height: auto;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        padding: 0 10px;
+
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 18px;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        main {
+            width: 85%;
+            height: 75%;
+            margin: 30px auto;
+            border-radius: 10px;
+            @include gradient(to bottom, $about-gradient);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .heading {
+                width: 80%;
+
+                h1 {
+                    font-size: 2.6rem;
+                }
+
+                hr {
+                    border-top: 2px solid white;
+                }
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .about-text {
+                width: 80%;
+                color: white;
+                line-height: 1.5;
+
+                p {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+
+            .footer-links-mob {
+                width: 100%;
+                height: auto;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        padding: 0 10px;
+
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============IPAD PRO==============*/
+@media (min-width: 1024px) and (max-width: 1366px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 18px;
+
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        main {
+            width: 85%;
+            height: 85%;
+            margin: 30px auto;
+            border-radius: 10px;
+            @include gradient(to bottom, $about-gradient);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .heading {
+                width: 70%;
+
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                hr {
+                    border-top: 2px solid white;
+                }
+
+                h2 {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .about-text {
+                width: 70%;
+                color: white;
+                line-height: 1.5;
+
+                p {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+
+            .footer-links-mob {
+                width: 100%;
+                height: auto;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        padding: 0 10px;
+
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
