@@ -6,11 +6,11 @@ html {
         height: 100%;
         margin: 0 auto;
 
-        main.mobile {
+        main#mobile {
             display: none !important;
         }
 
-        main.desktop {
+        main#desktop {
             width: 90%;
             height: 100vh;
             margin: 0 auto;
