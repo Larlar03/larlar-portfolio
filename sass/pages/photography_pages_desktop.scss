@@ -1,0 +1,209 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        /*Hide mobile*/
+        main#mobile {
+            display: none !important;
+        }
+
+        /*Desktop*/
+        main#desktop {
+            width: 90%;
+            height: 100vh;
+            margin: 0 auto;
+
+            /*Section containers*/
+            .outer-section {
+                width: 100%;
+                height: 100vh;
+                margin: 0 0 100px 0;
+                display: flex;
+                flex-flow: column nowrap;
+                scroll-snap-align: start;
+
+                /*prev & next page arrows*/
+                .arrow-container {
+                    width: 100%;
+                    height: auto;
+                    margin: 10px 0;
+                    text-align: center;
+
+                    .arrow-prev {
+                        @include links($lightgrey, $grey, $pink);
+
+                        a {
+                            i {
+                                vertical-align: top;
+                            }
+                        }
+                    }
+
+                    .arrow-next {
+                        @include links($lightgrey, $grey, $pink);
+                    }
+                }
+
+                /*Inner sections*/
+                .inner-section {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    overflow: hidden;
+
+                    /*Header*/
+                    .section-header {
+                        width: 100%;
+                        height: 8%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-content: center;
+
+                        .logo {
+                            width: 30%;
+                        }
+
+                        nav {
+                            width: 70%;
+                            text-align: right;
+
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+
+                                li {
+                                    display: inline-block;
+                                    padding-left: 20px;
+
+                                    a {
+                                        @include links($grey, $pink, $pink);
+
+                                        &:hover {
+                                            transition: 0.4s ease-in;
+                                        }
+                                    }
+
+                                    .active {
+                                        color: $purple !important;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /*Main*/
+                    .section-main {
+                        width: 100%;
+                        height: 84%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+
+                        .photography-project-title {
+                            margin: 20px 0 100px 0;
+                            text-align: center;
+                        }
+
+                        .photography-project-carousel-container {
+                            width: 100%;
+                            height: auto;
+
+
+                            /*Pagination dots style*/
+                            .splide__pagination {
+                                bottom: -2em;
+
+                                .splide__pagination__page {
+                                    background: $blue;
+                                }
+
+                                .is-active {
+                                    background: $purple;
+                                }
+                            }
+
+                            /*Carousel arrow style*/
+                            .splide__arrows {
+                                .splide__arrow {
+                                    background: rgba(0, 0, 0, 0);
+
+                                    svg {
+                                        fill: white;
+                                        height: 24px;
+                                        width: 21px;
+
+                                        &:hover {
+                                            fill: $grey;
+                                        }
+                                    }
+                                }
+                            }
+
+                            li.splide__slide {
+                                background-size: contain;
+
+                                img {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    /*Footer*/
+                    .section-footer {
+                        width: 100%;
+                        height: 8%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-content: center;
+
+
+                        .footer-icons {
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+
+                                li {
+                                    display: inline-block;
+
+                                    a {
+                                        @include links($purple, $grey, $pink);
+
+                                        &:hover {
+                                            transition: 0.4s ease-in;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .footer-icons-left {
+                            width: 50%;
+
+                            ul {
+                                li {
+                                    padding-right: 10px;
+                                }
+                            }
+
+                        }
+
+                        .footer-icons-right {
+                            width: 50%;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

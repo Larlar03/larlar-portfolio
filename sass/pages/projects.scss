@@ -1,0 +1,772 @@
+/*==============MOBILE PORTRAIT==============*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+        scroll-behavior: smooth;
+
+        /*Header*/
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*Back to the top arrow*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*Main*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 10px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Project preview grid*/
+            .project-grid-container {
+                margin: 40px auto 20px auto;
+                display: grid;
+                grid-template-columns: 308px;
+                grid-template-rows: repeat(7, 308px);
+                gap: 45px 0px;
+                grid-template-areas:
+                    "soundboard"
+                    "font"
+                    "period"
+                    "weather"
+                    "awake"
+                    "wheel"
+                    "sevdaliza";
+            }
+
+            .project {
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .soundboard {
+                grid-area: soundboard;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .font {
+                grid-area: font;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .period {
+                grid-area: period;
+                @include gradient(to bottom, $pg3);
+            }
+
+            .weather {
+                grid-area: weather;
+                @include gradient(to bottom, $pg4);
+            }
+
+            .awake {
+                grid-area: awake;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .wheel {
+                grid-area: wheel;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .sevdaliza {
+                grid-area: sevdaliza;
+                @include gradient(to bottom, $pg3);
+            }
+        }
+
+    }
+
+}
+
+/*==============MOBILE LANDSCAPE==============*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+        scroll-behavior: smooth;
+
+        /*Header*/
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*Back to the top arrow*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: -2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*Main*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.3rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 10px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Project preview grid*/
+            .project-grid-container {
+                margin: 40px auto 20px auto;
+                display: grid;
+                grid-template-columns: 412px;
+                grid-template-rows: repeat(7, 308px);
+                gap: 45px 0px;
+                grid-template-areas:
+                    "soundboard"
+                    "font"
+                    "period"
+                    "weather"
+                    "awake"
+                    "wheel"
+                    "sevdaliza";
+            }
+
+            .project {
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .soundboard {
+                grid-area: soundboard;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .font {
+                grid-area: font;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .period {
+                grid-area: period;
+                @include gradient(to bottom, $pg3);
+            }
+
+            .weather {
+                grid-area: weather;
+                @include gradient(to bottom, $pg4);
+            }
+
+            .awake {
+                grid-area: awake;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .wheel {
+                grid-area: wheel;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .sevdaliza {
+                grid-area: sevdaliza;
+                @include gradient(to bottom, $pg3);
+            }
+        }
+    }
+}
+
+
+/*==============TABLET PORTRAIT==============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+        scroll-behavior: smooth;
+
+        /*Header*/
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*Back to the top arrow*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: 2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*Main*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.6rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 10px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Project preview grid*/
+            .project-grid-container {
+                margin: 50px auto 40px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 308px);
+                grid-template-rows: repeat(4, 308px);
+                gap: 45px;
+                grid-template-areas:
+                    "soundboard font"
+                    "period weather"
+                    "awake wheel"
+                    "sevdaliza .";
+            }
+
+            .project {
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .soundboard {
+                grid-area: soundboard;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .font {
+                grid-area: font;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .period {
+                grid-area: period;
+                @include gradient(to bottom, $pg3);
+            }
+
+            .weather {
+                grid-area: weather;
+                @include gradient(to bottom, $pg4);
+            }
+
+            .awake {
+                grid-area: awake;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .wheel {
+                grid-area: wheel;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .sevdaliza {
+                grid-area: sevdaliza;
+                @include gradient(to bottom, $pg3);
+            }
+        }
+
+    }
+}
+
+/*==============TABLET LANDSCAPE==============*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 16px;
+        position: relative;
+        scroll-behavior: smooth;
+
+        /*Header*/
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*Back to the top arrow*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: 2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*Main*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.6rem;
+                    margin: 40px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 10px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Project grid preview*/
+            .project-grid-container {
+                margin: 50px auto 40px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 308px);
+                grid-template-rows: repeat(4, 308px);
+                gap: 45px;
+                grid-template-areas:
+                    "soundboard font"
+                    "period weather"
+                    "awake wheel"
+                    "sevdaliza .";
+            }
+
+            .project {
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .soundboard {
+                grid-area: soundboard;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .font {
+                grid-area: font;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .period {
+                grid-area: period;
+                @include gradient(to bottom, $pg3);
+            }
+
+            .weather {
+                grid-area: weather;
+                @include gradient(to bottom, $pg4);
+            }
+
+            .awake {
+                grid-area: awake;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .wheel {
+                grid-area: wheel;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .sevdaliza {
+                grid-area: sevdaliza;
+                @include gradient(to bottom, $pg3);
+            }
+        }
+    }
+}
+
+/*==============IPAD PRO==============*/
+@media (min-width: 1024px) and (max-width: 1366px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        font-size: 18px;
+        position: relative;
+        scroll-behavior: smooth;
+
+        /*Header*/
+        .header-mob {
+            .navbar-brand {
+                color: $grey;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(0, 0, 0, 0);
+
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        /*Back to the top arrow*/
+        div#back-to-top {
+            /* Hidden by default */
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: 2px;
+            /* Make sure it does not overlap */
+            z-index: 99;
+            padding: 15px;
+
+            a {
+                color: $lightgrey;
+            }
+        }
+
+        /*Main*/
+        main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+            .heading {
+                text-align: center;
+
+                h1 {
+                    color: $grey;
+                    font-size: 1.6rem;
+                    margin: 50px 0 20px 0;
+                }
+
+                hr {
+                    width: 40px;
+                    border-top: 2px solid $lightgrey;
+                }
+
+                .social-links {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                        li {
+                            display: inline-block;
+                            padding: 0 10px;
+
+                            a {
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Project preview grid*/
+            .project-grid-container {
+                margin: 60px auto 40px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 412px);
+                grid-template-rows: repeat(4, 308px);
+                gap: 45px;
+                grid-template-areas:
+                    "soundboard font"
+                    "period weather"
+                    "awake wheel"
+                    "sevdaliza ."
+                ;
+            }
+
+            .project {
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .soundboard {
+                grid-area: soundboard;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .font {
+                grid-area: font;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .period {
+                grid-area: period;
+                @include gradient(to bottom, $pg3);
+            }
+
+            .weather {
+                grid-area: weather;
+                @include gradient(to bottom, $pg4);
+            }
+
+            .awake {
+                grid-area: awake;
+                @include gradient(to bottom, $pg1);
+            }
+
+            .wheel {
+                grid-area: wheel;
+                @include gradient(to bottom, $pg2);
+            }
+
+            .sevdaliza {
+                grid-area: sevdaliza;
+                @include gradient(to bottom, $pg3);
+            }
+        }
+    }
+}
