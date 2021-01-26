@@ -1,0 +1,10 @@
+{
+  "name": "Lana Gordon Portfolio | Larlar",
+  "short_name": "Lana Gordon",
+  "description": "Portfolio for Front-End Developer Lana Gordon.",
+  "start_url": "/index",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#E0B8DD"
+}
