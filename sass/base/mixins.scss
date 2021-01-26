@@ -20,11 +20,3 @@
     color: $active-color !important;
   }
 }
-
-  /*Flexbox*/
-  @mixin flex($flow, $jcontent, $acontent) {
-    display: flex;
-    flex-flow: $flow;
-    justify-content: $jcontent;
-    align-content: $acontent;
-  }

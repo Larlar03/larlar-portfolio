@@ -3,11 +3,10 @@
     html {
         body {
             width: 100vw;
-            height: 100%;
+            height: 100vh;
             margin: 0 auto;
             font-size: 16px;
-            position: relative;
-            scroll-behavior: smooth;
+            @include gradient(to bottom, $about-gradient);
 
             /*Hide desktop*/
             main#desktop {
@@ -18,14 +17,14 @@
             main#mobile {
                 display: block !important;
                 width: 100%;
-                height: auto;
+                height: 100%;
                 display: flex;
                 flex-flow: column nowrap;
 
                 /*Header*/
                 .header-mob {
                     .navbar-brand {
-                        color: $grey;
+                        color: white;
                     }
 
                     .navbar-toggler {
@@ -40,27 +39,10 @@
                     }
                 }
 
-
-                /*Back to the top arrow*/
-                div#back-to-top {
-                    /* Hidden by default */
-                    display: none;
-                    position: fixed;
-                    bottom: 5px;
-                    right: -2px;
-                    /* Make sure it does not overlap */
-                    z-index: 99;
-                    padding: 15px;
-
-                    a {
-                        color: $lightgrey;
-                    }
-                }
-
                 /*Main*/
                 .main {
                     width: 100%;
-                    height: auto;
+                    height: 80%;
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: center;
@@ -68,15 +50,9 @@
                     .heading {
                         text-align: center;
 
-                        h1 {
-                            color: $grey;
-                            font-size: 1.3rem;
-                            margin: 40px 0 20px 0;
-                        }
-
                         hr {
                             width: 40px;
-                            border-top: 2px solid $lightgrey;
+                            border-top: 2px solid white;
                         }
 
                         .social-links {
@@ -92,39 +68,16 @@
 
                                 li {
                                     display: inline-block;
-                                    padding: 0 5px;
+                                    padding: 0 10px;
 
                                     a {
-                                        color: $purple;
+                                        color: white;
                                     }
                                 }
                             }
                         }
                     }
-
                 }
-
-                /*Photography preview grid*/
-                .photography-grid-container {
-                    width: 100%;
-                    height: auto;
-                    margin: 40px auto;
-                    display: grid;
-                    grid-template-columns: 80%;
-                    grid-template-rows: auto;
-                    gap: 40px 0;
-                    justify-content: center;
-
-                }
-
-                .photography {
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
             }
         }
     }
@@ -135,11 +88,10 @@
     html {
         body {
             width: 100vw;
-            height: 100%;
+            height: 100vh;
             margin: 0 auto;
             font-size: 16px;
-            position: relative;
-            scroll-behavior: smooth;
+            @include gradient(to bottom, $about-gradient);
 
             /*Hide desktop*/
             main#desktop {
@@ -150,19 +102,18 @@
             main#mobile {
                 display: block !important;
                 width: 100%;
-                height: auto;
+                height: 100%;
                 display: flex;
                 flex-flow: column nowrap;
 
                 /*Header*/
                 .header-mob {
                     .navbar-brand {
-                        color: $grey;
+                        color: white;
                     }
 
                     .navbar-toggler {
                         border-color: rgba(0, 0, 0, 0);
-
                     }
 
                     .navbar-collapse {
@@ -172,7 +123,7 @@
                             flex-direction: row;
                             justify-content: flex-end;
                             padding-right: 14px;
-    
+
                             .nav-item {
                                 padding-left: 20px;
                                 margin-right: 0;
@@ -181,27 +132,10 @@
                     }
                 }
 
-
-                /*Back to the top arrow*/
-                div#back-to-top {
-                    /* Hidden by default */
-                    display: none;
-                    position: fixed;
-                    bottom: 5px;
-                    right: -2px;
-                    /* Make sure it does not overlap */
-                    z-index: 99;
-                    padding: 15px;
-
-                    a {
-                        color: $lightgrey;
-                    }
-                }
-
                 /*Main*/
                 .main {
                     width: 100%;
-                    height: auto;
+                    height: 70%;
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: center;
@@ -209,15 +143,9 @@
                     .heading {
                         text-align: center;
 
-                        h1 {
-                            color: $grey;
-                            font-size: 1.3rem;
-                            margin: 40px 0 20px 0;
-                        }
-
                         hr {
                             width: 40px;
-                            border-top: 2px solid $lightgrey;
+                            border-top: 2px solid white;
                         }
 
                         .social-links {
@@ -233,39 +161,16 @@
 
                                 li {
                                     display: inline-block;
-                                    padding: 0 5px;
+                                    padding: 0 10px;
 
                                     a {
-                                        color: $purple;
+                                        color: white;
                                     }
                                 }
                             }
                         }
                     }
-
                 }
-
-                /*Project preview grid*/
-                .photography-grid-container {
-                    width: 100%;
-                    height: auto;
-                    margin: 40px auto;
-                    display: grid;
-                    grid-template-columns: 80%;
-                    grid-template-rows: auto;
-                    gap: 40px 0;
-                    justify-content: center;
-
-                }
-
-                .photography {
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
             }
         }
     }
@@ -276,11 +181,10 @@
     html {
         body {
             width: 100vw;
-            height: 100%;
+            height: 100vh;
             margin: 0 auto;
             font-size: 16px;
-            position: relative;
-            scroll-behavior: smooth;
+            @include gradient(to bottom, $about-gradient);
 
             /*Hide desktop*/
             main#desktop {
@@ -291,14 +195,14 @@
             main#mobile {
                 display: block !important;
                 width: 100%;
-                height: auto;
+                height: 100%;
                 display: flex;
                 flex-flow: column nowrap;
 
                 /*Header*/
                 .header-mob {
                     .navbar-brand {
-                        color: $grey;
+                        color: white;
                     }
 
                     .navbar-toggler {
@@ -313,27 +217,10 @@
                     }
                 }
 
-
-                /*Back to the top arrow*/
-                div#back-to-top {
-                    /* Hidden by default */
-                    display: none;
-                    position: fixed;
-                    bottom: 5px;
-                    right: -2px;
-                    /* Make sure it does not overlap */
-                    z-index: 99;
-                    padding: 15px;
-
-                    a {
-                        color: $lightgrey;
-                    }
-                }
-
                 /*Main*/
                 .main {
                     width: 100%;
-                    height: auto;
+                    height: 80%;
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: center;
@@ -341,15 +228,9 @@
                     .heading {
                         text-align: center;
 
-                        h1 {
-                            color: $grey;
-                            font-size: 1.3rem;
-                            margin: 40px 0 20px 0;
-                        }
-
                         hr {
                             width: 40px;
-                            border-top: 2px solid $lightgrey;
+                            border-top: 2px solid white;
                         }
 
                         .social-links {
@@ -365,38 +246,16 @@
 
                                 li {
                                     display: inline-block;
-                                    padding: 0 5px;
+                                    padding: 0 10px;
 
                                     a {
-                                        color: $purple;
+                                        color: white;
                                     }
                                 }
                             }
                         }
                     }
                 }
-
-                /*Photography preview grid*/
-                .photography-grid-container {
-                    width: 100%;
-                    height: auto;
-                    margin: 40px auto;
-                    display: grid;
-                    grid-template-columns: 80%;
-                    grid-template-rows: auto;
-                    gap: 40px 0;
-                    justify-content: center;
-
-                }
-
-                .photography {
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
             }
         }
     }
@@ -407,11 +266,10 @@
     html {
         body {
             width: 100vw;
-            height: 100%;
+            height: 100vh;
             margin: 0 auto;
             font-size: 16px;
-            position: relative;
-            scroll-behavior: smooth;
+            @include gradient(to bottom, $about-gradient);
 
             /*Hide desktop*/
             main#desktop {
@@ -422,14 +280,14 @@
             main#mobile {
                 display: block !important;
                 width: 100%;
-                height: auto;
+                height: 100%;
                 display: flex;
                 flex-flow: column nowrap;
 
                 /*Header*/
                 .header-mob {
                     .navbar-brand {
-                        color: $grey;
+                        color: white;
                     }
 
                     .navbar-toggler {
@@ -437,34 +295,25 @@
                     }
 
                     .navbar-collapse {
+
+                        /*Make nav links horizontal line*/
                         .navbar-nav {
-                            text-align: right;
-                            padding-right: 10px;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            padding-right: 14px;
+
+                            .nav-item {
+                                padding-left: 20px;
+                                margin-right: 0;
+                            }
                         }
-                    }
-                }
-
-
-                /*Back to the top arrow*/
-                div#back-to-top {
-                    /* Hidden by default */
-                    display: none;
-                    position: fixed;
-                    bottom: 5px;
-                    right: -2px;
-                    /* Make sure it does not overlap */
-                    z-index: 99;
-                    padding: 15px;
-
-                    a {
-                        color: $lightgrey;
                     }
                 }
 
                 /*Main*/
                 .main {
                     width: 100%;
-                    height: auto;
+                    height: 80%;
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: center;
@@ -472,15 +321,9 @@
                     .heading {
                         text-align: center;
 
-                        h1 {
-                            color: $grey;
-                            font-size: 1.3rem;
-                            margin: 40px 0 20px 0;
-                        }
-
                         hr {
                             width: 40px;
-                            border-top: 2px solid $lightgrey;
+                            border-top: 2px solid white;
                         }
 
                         .social-links {
@@ -496,38 +339,185 @@
 
                                 li {
                                     display: inline-block;
-                                    padding: 0 5px;
+                                    padding: 0 10px;
 
                                     a {
-                                        color: $purple;
+                                        color: white;
                                     }
                                 }
                             }
                         }
                     }
                 }
-
-                /*Photography preview grid*/
-                .photography-grid-container {
-                    width: 100%;
-                    height: auto;
-                    margin: 40px auto;
-                    display: grid;
-                    grid-template-columns: 80%;
-                    grid-template-rows: auto;
-                    gap: 40px 0;
-                    justify-content: center;
-                }
-
-                .photography {
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-
             }
         }
     }
+}
+
+
+/*=================DESKTOP===================*/
+@media (min-width: 1025px) {
+    html {
+        scroll-behavior: smooth;
+
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+
+            /*Hide mobile*/
+            main#mobile {
+                display: none !important;
+            }
+
+            /*Desktop*/
+            main#desktop {
+                width: 90%;
+                height: 100vh;
+                margin: 0 auto;
+
+                /*Section containers*/
+                .outer-section {
+                    width: 100%;
+                    height: 100vh;
+                    margin: 0 0 100px 0;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    scroll-snap-align: start;
+
+                    /*prev & next page arrows*/
+                    .arrow-container {
+                        width: 100%;
+                        height: auto;
+                        margin: 10px 0;
+                        text-align: center;
+
+                        .arrow-prev {
+                            @include links($lightgrey, $grey, $pink);
+
+                            a {
+                                i {
+                                    vertical-align: top;
+                                }
+                            }
+                        }
+
+                        .arrow-next {
+                            @include links($lightgrey, $grey, $pink);
+                        }
+                    }
+
+                    /*Inner sections*/
+                    .inner-section {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        overflow: hidden;
+
+                        /*Header*/
+                        .section-header {
+                            width: 100%;
+                            height: 8%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-content: center;
+
+                            .logo {
+                                width: 30%;
+                            }
+
+                            nav {
+                                width: 70%;
+                                text-align: right;
+
+                                ul {
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        display: inline-block;
+                                        padding-left: 20px;
+
+                                        a {
+                                            @include links($grey, $pink, $pink);
+
+                                            &:hover {
+                                                transition: 0.4s ease-in;
+                                            }
+                                        }
+
+                                        .active {
+                                            color: $purple !important;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        /*Main*/
+                        .section-main {
+                            width: 100%;
+                            height: 84%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+                            text-align: center;
+                            @include gradient(to bottom, $about-gradient);
+                        }
+
+                        /*Footer*/
+                        .section-footer {
+                            width: 100%;
+                            height: 8%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-content: center;
+
+
+                            .footer-icons {
+                                ul {
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        display: inline-block;
+
+                                        a {
+                                            @include links($purple, $grey, $pink);
+
+                                            &:hover {
+                                                transition: 0.4s ease-in;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .footer-icons-left {
+                                width: 50%;
+
+                                ul {
+                                    li {
+                                        padding-right: 10px;
+                                    }
+                                }
+
+                            }
+
+                            .footer-icons-right {
+                                width: 50%;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
