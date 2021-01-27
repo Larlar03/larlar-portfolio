@@ -6,9 +6,9 @@ html {
         height: 100%;
         margin: 0 auto;
 
-        main#desktop {
+        main {
             width: 90%;
-            height: auto !important;
+            height: auto;
             margin: 0 auto;
 
             /*Snap Scroll*/
@@ -27,7 +27,7 @@ html {
                 display: flex;
                 flex-flow: column nowrap;
                 scroll-snap-align: start;
-
+ 
                 /*prev & next page arrows*/
                 .arrow-container {
                     width: 100%;
@@ -123,6 +123,7 @@ html {
 
                                 li {
                                     display: inline-block;
+                                    padding-right: 10px;
 
                                     a {
                                         @include links($purple, $grey, $pink);
@@ -133,21 +134,6 @@ html {
                                     }
                                 }
                             }
-                        }
-
-                        .footer-icons-left {
-                            width: 50%;
-
-                            ul {
-                                li {
-                                    padding-right: 10px;
-                                }
-                            }
-                        }
-
-                        .footer-icons-right {
-                            width: 50%;
-                            text-align: right;
                         }
                     }
                 }

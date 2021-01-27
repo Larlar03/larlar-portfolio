@@ -107,7 +107,7 @@ html {
                         justify-content: space-around;
 
                         .photography-project-title {
-                            margin: 20px 0 100px 0;
+                            margin: 20px 0 40px 0;
                             text-align: center;
                         }
 
@@ -173,6 +173,7 @@ html {
 
                                 li {
                                     display: inline-block;
+                                    padding-right: 10px;
 
                                     a {
                                         @include links($purple, $grey, $pink);
@@ -184,22 +185,6 @@ html {
 
                                 }
                             }
-                        }
-
-                        .footer-icons-left {
-                            width: 50%;
-
-                            ul {
-                                li {
-                                    padding-right: 10px;
-                                }
-                            }
-
-                        }
-
-                        .footer-icons-right {
-                            width: 50%;
-                            text-align: right;
                         }
                     }
                 }
