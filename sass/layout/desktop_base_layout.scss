@@ -5,33 +5,33 @@ html {
         width: 100%;
         height: 100%;
         margin: 0 auto;
+        overflow: hidden;
 
         main {
             width: 90%;
             height: auto;
             margin: 0 auto;
 
-            /*Snap Scroll*/
+            /*Snap Scroll Needs main with a heaight of 100vh, but doens't work on Safri
             display: flex;
-            flex-flow: column nowrap;
-            overflow-y: auto;
+            flex-direction: column;
             scroll-snap-type: y mandatory;
-            cursor: scroll;
-
+            overflow-y: scroll;
+            cursor: scroll;*/
 
             /*Section containers*/
             .outer-section {
                 width: 100%;
                 height: 100vh;
-                margin: 0 0 100px 0;
+                margin: 0;
                 display: flex;
                 flex-flow: column nowrap;
-                scroll-snap-align: start;
- 
+                /*scroll-snap-align: start;*/
+
                 /*prev & next page arrows*/
                 .arrow-container {
                     width: 100%;
-                    height: auto;
+                    height: 5vh;
                     margin: 10px 0;
                     text-align: center;
 
@@ -53,7 +53,7 @@ html {
                 /*Inner sections*/
                 .inner-section {
                     width: 100%;
-                    height: 100%;
+                    height: 90vh;
                     display: flex;
                     flex-flow: column nowrap;
                     overflow: hidden;
@@ -68,6 +68,10 @@ html {
 
                         .logo {
                             width: 30%;
+                            color: $grey;
+                            a {
+                                @include links($grey, $pink, $pink);
+                            }
                         }
 
                         nav {
@@ -85,9 +89,9 @@ html {
 
                                     a {
                                         @include links($grey, $pink, $pink);
-
                                         &:hover {
                                             transition: 0.4s ease-in;
+                                            text-decoration: underline;
                                         }
                                     }
 
@@ -114,7 +118,6 @@ html {
                         flex-flow: row wrap;
                         align-content: center;
 
-
                         .footer-icons {
                             ul {
                                 list-style: none;
@@ -127,7 +130,6 @@ html {
 
                                     a {
                                         @include links($purple, $grey, $pink);
-
                                         &:hover {
                                             transition: 0.4s ease-in;
                                         }

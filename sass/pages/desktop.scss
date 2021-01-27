@@ -1,231 +1,453 @@
- body {
-     main#main-mob-home {
-         display: none !important;
-     } 
+/*Laptops & Small Desktop*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        main#main-mob-home {
+            display: none !important;
+        }
 
-     main#desktop {
-         /*Home section*/
-         height: auto;
-         #outer-home {
-            .arrow-prev {
-                @include links(white, white, white);
-                cursor: none;
-                a {
-                    
-                    i {
-                        vertical-align: top;
+        main#desktop {
+            /*Home section*/
+            /*height: auto;*/
+            #outer-home {
+                .arrow-prev {
+                    display: none;
+                }
+
+                #inner-home {
+                    div#main-home {
+                        @include gradient(to bottom, $home-gradient);
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        align-content: center;
+                        text-align: center;
+
+                        h1 {
+                            margin-bottom: 20px;
+                        }
                     }
                 }
             }
 
-             #inner-home {
-                 div#main-home {
-                     @include gradient(to bottom, $home-gradient);
-                     display: flex;
-                     flex-flow: column wrap;
-                     justify-content: center;
-                     align-content: center;
-                     text-align: center;
+            /*Projects section*/
+            #outer-projects {
+                #inner-projects {
+                    div#main-projects {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
 
-                     h1 {
-                         margin-bottom: 20px;
-                     }
-                 }
-             }
-         }
+                        .projects-title {
+                            text-align: center;
+                            margin-bottom: 40px;
+                        }
 
-         /*Projects section*/
-         #outer-projects {
-             #inner-projects {
-                 div#main-projects {
-                     display: flex;
-                     flex-flow: column nowrap;
-                     justify-content: space-around;
+                        /*Projects carousel container*/
+                        .projects-carousel-container {
+                            width: 100%;
+                            min-height: 240px;
+                            text-align: center;
 
-                     .projects-title {
-                         text-align: center;
-                         margin-bottom: 40px;
-                     }
+                            /*pagination dots style*/
+                            .splide__pagination {
+                                bottom: -2em;
 
-                     /*Projects carousel container*/
-                     .projects-carousel-container {
-                         width: 100%;
-                         min-height: 240px;
-                         text-align: center;
+                                .splide__pagination__page {
+                                    background: $blue;
+                                }
 
-                         /*pagination dots style*/
-                         .splide__pagination {
-                             bottom: -2em;
+                                .is-active {
+                                    background: $purple;
+                                }
+                            }
 
-                             .splide__pagination__page {
-                                 background: $blue;
-                             }
+                            /*Carousel arrows style*/
+                            .splide__arrows {
+                                .splide__arrow {
+                                    background: rgba(0, 0, 0, 0);
 
-                             .is-active {
-                                 background: $purple;
-                             }
-                         }
+                                    svg {
+                                        fill: white;
+                                        height: 24px;
+                                        width: 21px;
+                                        &:hover {
+                                            fill: $grey;
+                                        }
+                                    }
+                                }
+                            }
 
-                         /*Carousel arrows style*/
-                         .splide__arrows {
-                             .splide__arrow {
-                                 background: rgba(0, 0, 0, 0);
+                            /*Vertically align preview headings in box*/
+                            .preview-box {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                /*border: 20px solid white;*/
+                            }
 
-                                 svg {
-                                     fill: white;
-                                     height: 24px;
-                                     width: 21px;
+                            .soundboard {
+                                @include gradient(to bottom, $pg1);
+                            }
 
-                                     &:hover {
-                                         fill: $grey;
-                                     }
-                                 }
-                             }
-                         }
+                            .font {
+                                @include gradient(to bottom, $pg2);
+                            }
 
-                         /*Vertically align preview headings in box*/
-                         .preview-box {
-                             display: flex;
-                             align-items: center;
-                             justify-content: center;
-                             /*border: 20px solid white;*/
-                         }
+                            .period {
+                                @include gradient(to bottom, $pg3);
+                            }
 
-                         .soundboard {
-                             @include gradient(to bottom, $pg1);
-                         }
+                            .weather {
+                                @include gradient(to bottom, $pg4);
+                            }
 
-                         .font {
-                             @include gradient(to bottom, $pg2);
-                         }
+                            .awake {
+                                @include gradient(to bottom, $pg1);
+                            }
 
-                         .period {
-                             @include gradient(to bottom, $pg3);
-                         }
+                            .wheel {
+                                @include gradient(to bottom, $pg2);
+                            }
 
-                         .weather {
-                             @include gradient(to bottom, $pg4);
-                         }
-
-                         .awake {
-                             @include gradient(to bottom, $pg1);
-                         }
-
-                         .wheel {
-                             @include gradient(to bottom, $pg2);
-                         }
-
-                         .sevdaliza {
-                             @include gradient(to bottom, $pg3);
-                         }
-                     }
-                 }
-             }
-         }
-
-         /*Photography section*/
-         #outer-photography {
-             #inner-photography {
-                 div#main-photography {
-                     display: flex;
-                     flex-flow: column nowrap;
-                     justify-content: space-around;
-
-                     .photography-title {
-                         margin-bottom: 40px;
-                         text-align: center;
-                     }
-
-                     /*photography slideshow carousel*/
-                     .photography-carousel-container {
-                         width: 100%;
-                         height: auto;
-
-                         /*Pagination dots style*/
-                         .splide__pagination {
-                             bottom: -2em;
-
-                             .splide__pagination__page {
-                                 background: $blue;
-                             }
-
-                             .is-active {
-                                 background: $purple;
-                             }
-                         }
-
-                         /*carousel arrows style*/
-                         .splide__arrows {
-                             .splide__arrow {
-                                 background: rgba(0, 0, 0, 0);
-
-                                 svg {
-                                     fill: white;
-                                     height: 24px;
-                                     width: 21px;
-
-                                     &:hover {
-                                         fill: $grey;
-                                     }
-                                 }
-                             }
-                         }
-
-                         .splide__slide img {
-                             width: 100%;
-                             height: auto;
-                         }
-                     }
-                 }
-             }
-         }
-
-         /*About section*/
-         #outer-about {
-            .arrow-next {
-                @include links(white, white, white);
-                cursor: none;
+                            .sevdaliza {
+                                @include gradient(to bottom, $pg3);
+                            }
+                        }
+                    }
+                }
             }
-             #inner-about {
-                 div#main-about {
-                     display: flex;
-                     flex-flow: column wrap;
-                     justify-content: center;
 
-                     .about-left {
-                         width: 50%;
-                         height: 100%;
-                         @include gradient(to bottom, $about-gradient);
+            /*Photography section*/
+            #outer-photography {
+                #inner-photography {
+                    div#main-photography {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
 
-                     }
+                        .photography-title {
+                            margin-bottom: 40px;
+                            text-align: center;
+                        }
 
-                     .about-right {
-                         width: 40%;
-                         height: auto;
-                         margin: 0 auto;
+                        /*photography slideshow carousel*/
+                        .photography-carousel-container {
+                            width: 100%;
+                            height: auto;
 
-                         .about-title {
-                             margin-bottom: 25px;
+                            /*Pagination dots style*/
+                            .splide__pagination {
+                                bottom: -2em;
 
-                             h3 {
-                                 color: $grey;
-                                 font-weight: 500;
-                             }
+                                .splide__pagination__page {
+                                    background: $blue;
+                                }
 
-                             h5 {
-                                 color: $blue;
-                             }
+                                .is-active {
+                                    background: $purple;
+                                }
+                            }
 
-                             hr {
-                                 border-top: 2px solid $lightgrey;
-                             }
-                         }
+                            /*carousel arrows style*/
+                            .splide__arrows {
+                                .splide__arrow {
+                                    background: rgba(0, 0, 0, 0);
 
+                                    svg {
+                                        fill: white;
+                                        height: 24px;
+                                        width: 21px;
+                                        &:hover {
+                                            fill: $grey;
+                                        }
+                                    }
+                                }
+                            }
 
-                     }
-                 }
-             }
-         }
+                            .splide__slide img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
 
-     }
- }
+            /*About section*/
+            #outer-about {
+                .arrow-next {
+                    @include links(white, white, white);
+                    cursor: none;
+                }
+                #inner-about {
+                    div#main-about {
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+
+                        .about-left {
+                            width: 50%;
+                            height: 90%;
+                            @include gradient(to bottom, $about-gradient);
+
+                        }
+
+                        .about-right {
+                            width: 40%;
+                            height: auto;
+                            margin: 0 auto;
+
+                            .about-title {
+                                margin-bottom: 25px;
+
+                                h3 {
+                                    color: $bodytext;
+                                    font-weight: 500;
+                                }
+
+                                h5 {
+                                    color: $bodytext;
+                                }
+                            }
+                            hr {
+                                border-top: 2px solid $pink;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1281px) {
+    body {
+        main#main-mob-home {
+            display: none !important;
+        }
+
+        main#desktop {
+            /*Home section*/
+            height: auto;
+            #outer-home {
+                .arrow-prev {
+                    @include links(white, white, white);
+                    cursor: none;
+                    a {
+
+                        i {
+                            vertical-align: top;
+                        }
+                    }
+                }
+
+                #inner-home {
+                    div#main-home {
+                        @include gradient(to bottom, $home-gradient);
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        align-content: center;
+                        text-align: center;
+
+                        h1 {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+
+            /*Projects section*/
+            #outer-projects {
+                #inner-projects {
+                    div#main-projects {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+
+                        .projects-title {
+                            text-align: center;
+                            margin-bottom: 40px;
+                        }
+
+                        /*Projects carousel container*/
+                        .projects-carousel-container {
+                            width: 100%;
+                            min-height: 240px;
+                            text-align: center;
+
+                            /*pagination dots style*/
+                            .splide__pagination {
+                                bottom: -2em;
+
+                                .splide__pagination__page {
+                                    background: $blue;
+                                }
+
+                                .is-active {
+                                    background: $purple;
+                                }
+                            }
+
+                            /*Carousel arrows style*/
+                            .splide__arrows {
+                                .splide__arrow {
+                                    background: rgba(0, 0, 0, 0);
+
+                                    svg {
+                                        fill: white;
+                                        height: 24px;
+                                        width: 21px;
+                                        &:hover {
+                                            fill: $grey;
+                                        }
+                                    }
+                                }
+                            }
+
+                            /*Vertically align preview headings in box*/
+                            .preview-box {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                /*border: 20px solid white;*/
+                            }
+
+                            .soundboard {
+                                @include gradient(to bottom, $pg1);
+                            }
+
+                            .font {
+                                @include gradient(to bottom, $pg2);
+                            }
+
+                            .period {
+                                @include gradient(to bottom, $pg3);
+                            }
+
+                            .weather {
+                                @include gradient(to bottom, $pg4);
+                            }
+
+                            .awake {
+                                @include gradient(to bottom, $pg1);
+                            }
+
+                            .wheel {
+                                @include gradient(to bottom, $pg2);
+                            }
+
+                            .sevdaliza {
+                                @include gradient(to bottom, $pg3);
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Photography section*/
+            #outer-photography {
+                #inner-photography {
+                    div#main-photography {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+
+                        .photography-title {
+                            margin-bottom: 40px;
+                            text-align: center;
+                        }
+
+                        /*photography slideshow carousel*/
+                        .photography-carousel-container {
+                            width: 100%;
+                            height: auto;
+
+                            /*Pagination dots style*/
+                            .splide__pagination {
+                                bottom: -2em;
+
+                                .splide__pagination__page {
+                                    background: $blue;
+                                }
+
+                                .is-active {
+                                    background: $purple;
+                                }
+                            }
+
+                            /*carousel arrows style*/
+                            .splide__arrows {
+                                .splide__arrow {
+                                    background: rgba(0, 0, 0, 0);
+
+                                    svg {
+                                        fill: white;
+                                        height: 24px;
+                                        width: 21px;
+                                        &:hover {
+                                            fill: $grey;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .splide__slide img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*About section*/
+            #outer-about {
+                .arrow-next {
+                    @include links(white, white, white);
+                    cursor: none;
+                }
+                #inner-about {
+                    div#main-about {
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+
+                        .about-left {
+                            width: 50%;
+                            height: 100%;
+                            @include gradient(to bottom, $about-gradient);
+
+                        }
+
+                        .about-right {
+                            width: 40%;
+                            height: auto;
+                            margin: 0 auto;
+
+                            .about-title {
+                                margin-bottom: 25px;
+
+                                h3 {
+                                    color: $bodytext;
+                                    font-weight: 500;
+                                }
+
+                                h5 {
+                                    color: $bodytext;
+                                }
+
+                            }
+                        }
+
+                        hr {
+                            border-top: 2px solid $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
