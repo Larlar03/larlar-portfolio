@@ -6,9 +6,9 @@ html {
         height: 100%;
         margin: 0 auto;
 
-        main {
+        main#desktop {
             width: 90%;
-            height: auto;
+            height: auto !important;
             margin: 0 auto;
 
             /*Snap Scroll*/
